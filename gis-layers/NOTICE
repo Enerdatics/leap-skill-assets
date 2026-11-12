@@ -1,0 +1,17 @@
+NOTICE: data licences for this folder
+
+Enerdatics claims no copyright in the data files in this folder (the .geojson files and the counts in
+index.json). Any copyright or "All rights reserved" notice elsewhere in this repository does not apply
+to them.
+They are derived from U.S. Government works in the public domain, modified as stated below.
+Everything here is provided as is, with no warranty of accuracy, completeness or fitness for any purpose.
+
+Per layer (attribution; licence):
+
+- Transmission lines: HIFLD Electric Power Transmission Lines (U.S. DHS HIFLD; data by Oak Ridge National Laboratory).
+  Licence: Public domain (U.S. Government work, HIFLD/ORNL); modified by Enerdatics (clipped, simplified, fields reduced); some voltages inferred by HIFLD; no warranty.
+  Vintage: HIFLD Electric Power Transmission Lines; snapshot date not recorded in the extract (unproven).
+
+- State boundaries: U.S. Census Bureau cartographic boundary file (states).
+  Licence: Public domain (U.S. Government work, U.S. Census Bureau); modified by Enerdatics (filtered to the 50 states, DC and Puerto Rico; simplified); no warranty.
+  Vintage: Census cartographic boundary file 2024, 1:5,000,000.

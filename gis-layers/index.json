@@ -1,0 +1,1576 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-12T10:48:53+00:00",
+  "vintage_note": "Snapshot date not recorded in the source extract",
+  "crs": "EPSG:4326",
+  "coordinate_decimals": 5,
+  "max_file_bytes": 20971520,
+  "state_codes": {
+    "AL": "Alabama",
+    "AK": "Alaska",
+    "AZ": "Arizona",
+    "AR": "Arkansas",
+    "CA": "California",
+    "CO": "Colorado",
+    "CT": "Connecticut",
+    "DE": "Delaware",
+    "FL": "Florida",
+    "GA": "Georgia",
+    "HI": "Hawaii",
+    "ID": "Idaho",
+    "IL": "Illinois",
+    "IN": "Indiana",
+    "IA": "Iowa",
+    "KS": "Kansas",
+    "KY": "Kentucky",
+    "LA": "Louisiana",
+    "ME": "Maine",
+    "MD": "Maryland",
+    "MA": "Massachusetts",
+    "MI": "Michigan",
+    "MN": "Minnesota",
+    "MS": "Mississippi",
+    "MO": "Missouri",
+    "MT": "Montana",
+    "NE": "Nebraska",
+    "NV": "Nevada",
+    "NH": "New Hampshire",
+    "NJ": "New Jersey",
+    "NM": "New Mexico",
+    "NY": "New York",
+    "NC": "North Carolina",
+    "ND": "North Dakota",
+    "OH": "Ohio",
+    "OK": "Oklahoma",
+    "OR": "Oregon",
+    "PA": "Pennsylvania",
+    "RI": "Rhode Island",
+    "SC": "South Carolina",
+    "SD": "South Dakota",
+    "TN": "Tennessee",
+    "TX": "Texas",
+    "UT": "Utah",
+    "VT": "Vermont",
+    "VA": "Virginia",
+    "WA": "Washington",
+    "WV": "West Virginia",
+    "WI": "Wisconsin",
+    "WY": "Wyoming",
+    "DC": "District of Columbia",
+    "PR": "Puerto Rico"
+  },
+  "visibility": "public",
+  "state_bboxes": {
+    "AK": [
+      -179.14734,
+      51.21986,
+      179.77848,
+      71.35257
+    ],
+    "AL": [
+      -88.47323,
+      30.22113,
+      -84.88943,
+      35.00803
+    ],
+    "AR": [
+      -94.61792,
+      33.00429,
+      -89.64157,
+      36.4996
+    ],
+    "AZ": [
+      -114.81419,
+      31.33217,
+      -109.04522,
+      37.00426
+    ],
+    "CA": [
+      -124.4096,
+      32.53415,
+      -114.13442,
+      42.00952
+    ],
+    "CO": [
+      -109.06026,
+      36.99242,
+      -102.04152,
+      41.00345
+    ],
+    "CT": [
+      -73.72778,
+      40.98517,
+      -71.78699,
+      42.05059
+    ],
+    "DC": [
+      -77.11976,
+      38.79164,
+      -76.90939,
+      38.99555
+    ],
+    "DE": [
+      -75.7889,
+      38.45101,
+      -75.04893,
+      39.83919
+    ],
+    "FL": [
+      -87.63495,
+      24.52115,
+      -80.03136,
+      31.00089
+    ],
+    "GA": [
+      -85.60517,
+      30.35783,
+      -80.84054,
+      35.00066
+    ],
+    "HI": [
+      -160.24496,
+      18.91313,
+      -154.80804,
+      22.22964
+    ],
+    "IA": [
+      -96.63971,
+      40.37826,
+      -90.14006,
+      43.5012
+    ],
+    "ID": [
+      -117.24303,
+      41.98805,
+      -111.04356,
+      49.00115
+    ],
+    "IL": [
+      -91.51308,
+      36.97029,
+      -87.49649,
+      42.50849
+    ],
+    "IN": [
+      -88.0979,
+      37.77174,
+      -84.78457,
+      41.7606
+    ],
+    "KS": [
+      -102.05175,
+      36.99308,
+      -94.58993,
+      40.00317
+    ],
+    "KY": [
+      -89.57151,
+      36.49712,
+      -81.96497,
+      39.14746
+    ],
+    "LA": [
+      -94.04315,
+      28.9297,
+      -88.81701,
+      33.01946
+    ],
+    "MA": [
+      -73.50815,
+      41.23796,
+      -69.92826,
+      42.88659
+    ],
+    "MD": [
+      -79.48766,
+      37.91171,
+      -75.04893,
+      39.72313
+    ],
+    "ME": [
+      -71.08393,
+      43.05982,
+      -66.94989,
+      47.45969
+    ],
+    "MI": [
+      -90.41814,
+      41.69608,
+      -82.41296,
+      48.19098
+    ],
+    "MN": [
+      -97.23921,
+      43.49935,
+      -89.48922,
+      49.38436
+    ],
+    "MO": [
+      -95.77471,
+      35.99568,
+      -89.09884,
+      40.61364
+    ],
+    "MS": [
+      -91.65501,
+      30.17394,
+      -88.09788,
+      34.99606
+    ],
+    "MT": [
+      -116.0499,
+      44.35799,
+      -104.03913,
+      49.00108
+    ],
+    "NC": [
+      -84.32187,
+      33.84451,
+      -75.45865,
+      36.58812
+    ],
+    "ND": [
+      -104.0489,
+      45.93505,
+      -96.5545,
+      49.00057
+    ],
+    "NE": [
+      -104.05352,
+      39.99999,
+      -95.30829,
+      43.00171
+    ],
+    "NH": [
+      -72.55725,
+      42.69699,
+      -70.70379,
+      45.30548
+    ],
+    "NJ": [
+      -75.55829,
+      38.92851,
+      -73.89397,
+      41.35743
+    ],
+    "NM": [
+      -109.05018,
+      31.3323,
+      -103.00196,
+      37.00024
+    ],
+    "NV": [
+      -120.00575,
+      35.00185,
+      -114.03964,
+      42.00221
+    ],
+    "NY": [
+      -79.76216,
+      40.4961,
+      -71.85636,
+      45.01585
+    ],
+    "OH": [
+      -84.82016,
+      38.4032,
+      -80.51869,
+      41.97753
+    ],
+    "OK": [
+      -103.00257,
+      33.61656,
+      -94.43121,
+      37.00221
+    ],
+    "OR": [
+      -124.55245,
+      41.99179,
+      -116.4635,
+      46.27101
+    ],
+    "PA": [
+      -80.5199,
+      39.72006,
+      -74.68951,
+      42.26986
+    ],
+    "PR": [
+      -67.9408,
+      17.8783,
+      -65.22156,
+      18.51576
+    ],
+    "RI": [
+      -71.86278,
+      41.14633,
+      -71.12057,
+      42.0188
+    ],
+    "SC": [
+      -83.35324,
+      32.03388,
+      -78.54242,
+      35.21541
+    ],
+    "SD": [
+      -104.0577,
+      42.47963,
+      -96.43658,
+      45.94545
+    ],
+    "TN": [
+      -90.30972,
+      34.98297,
+      -81.6469,
+      36.67812
+    ],
+    "TX": [
+      -106.64548,
+      25.83737,
+      -93.5164,
+      36.50071
+    ],
+    "UT": [
+      -114.05297,
+      36.99796,
+      -109.04105,
+      42.00157
+    ],
+    "VA": [
+      -83.67542,
+      36.54073,
+      -75.24246,
+      39.46602
+    ],
+    "VT": [
+      -73.43775,
+      42.72685,
+      -71.46503,
+      45.01666
+    ],
+    "WA": [
+      -124.73318,
+      45.54354,
+      -116.91598,
+      49.0025
+    ],
+    "WI": [
+      -92.88812,
+      42.49192,
+      -86.80541,
+      47.07667
+    ],
+    "WV": [
+      -82.64474,
+      37.20148,
+      -77.71951,
+      40.63881
+    ],
+    "WY": [
+      -111.05689,
+      40.99474,
+      -104.05216,
+      45.00591
+    ]
+  },
+  "inputs": [
+    {
+      "input": "boundaries_states",
+      "sha256": "c9db0e395c11a1f94a8017fde4f4c7cbee1dca6eb37ba8f1ccaab927df70885f",
+      "bytes": 1122055,
+      "modified": "2026-11-11T09:04:07Z"
+    },
+    {
+      "input": "transmission:AL",
+      "sha256": "5a52c0a146db323e6a2310e6b3496ee911a2d848eda154094aff989448c67451",
+      "bytes": 2583317,
+      "modified": "2026-07-24T07:39:08Z"
+    },
+    {
+      "input": "transmission:AK",
+      "sha256": "08b65f61a4e895af50cae2d105c6f7ca18d73678fe5aadb9e5f8a9a84422732b",
+      "bytes": 231758,
+      "modified": "2026-07-24T07:39:08Z"
+    },
+    {
+      "input": "transmission:AZ",
+      "sha256": "1b0ccf64ba7efbc3a9a7ce331d52cc888def06474f5dc1e99d286f040ccf741a",
+      "bytes": 969356,
+      "modified": "2026-07-24T07:39:08Z"
+    },
+    {
+      "input": "transmission:AR",
+      "sha256": "4e1f28e1e05274bc13ab368a5e40cd413e15ab0736e052f9263ae9edb35357de",
+      "bytes": 1406806,
+      "modified": "2026-07-24T07:39:08Z"
+    },
+    {
+      "input": "transmission:CA",
+      "sha256": "859ff13b35de7a3657ba6350ba6eea3b835017f7a7f53fcb584566808e07fdb1",
+      "bytes": 7066906,
+      "modified": "2026-07-24T07:39:10Z"
+    },
+    {
+      "input": "transmission:CO",
+      "sha256": "67386d2ee357a9a231fa769efceaa0ab7304a806e85fd42dde27cf5523ea7260",
+      "bytes": 1936331,
+      "modified": "2026-07-24T07:39:10Z"
+    },
+    {
+      "input": "transmission:CT",
+      "sha256": "04d19556f6b9e33ec168a5b5734f320e65f8f115238b45b32fb68f8614e2cf3a",
+      "bytes": 559773,
+      "modified": "2026-07-24T07:39:10Z"
+    },
+    {
+      "input": "transmission:DE",
+      "sha256": "940e45efe0fe9aa73ba57af319be4429ed122ad15d14c8e487e8ac586f05bee5",
+      "bytes": 260352,
+      "modified": "2026-07-24T07:39:10Z"
+    },
+    {
+      "input": "transmission:FL",
+      "sha256": "ed98bd97c3a05dc7ac9dca8428875e18a92282e6e4d572061badc0a89879b3bd",
+      "bytes": 3374444,
+      "modified": "2026-07-24T07:39:11Z"
+    },
+    {
+      "input": "transmission:GA",
+      "sha256": "4ebcd063eacd402f8d678e004567205491bcee948b5e3ab46f65183484c26fd4",
+      "bytes": 3300390,
+      "modified": "2026-07-24T07:39:12Z"
+    },
+    {
+      "input": "transmission:HI",
+      "sha256": "063be06db037b9784b38d04768a5291cf9964f05cc76b47cebad24d94053a7aa",
+      "bytes": 177899,
+      "modified": "2026-07-24T07:39:12Z"
+    },
+    {
+      "input": "transmission:ID",
+      "sha256": "7b0dfd9a01eff9a8a1a35718ac1824ca8f279beac7e6dbf3640940f03f97a1a0",
+      "bytes": 1507833,
+      "modified": "2026-07-24T07:39:12Z"
+    },
+    {
+      "input": "transmission:IL",
+      "sha256": "2b116e54dda2b135e9dc2d9e6a3e521874343ab9794d2c0239af3de97a156407",
+      "bytes": 2541029,
+      "modified": "2026-07-24T07:39:13Z"
+    },
+    {
+      "input": "transmission:IN",
+      "sha256": "ad2759892f004ad67383978f468f022ff2bc424251e18a06afdae0d9b4e61c02",
+      "bytes": 1703746,
+      "modified": "2026-07-24T07:39:14Z"
+    },
+    {
+      "input": "transmission:IA",
+      "sha256": "d50c78209315f6705c7e0dc5c132d03deb7a9efb8b7e6b8b5ea207712e38f100",
+      "bytes": 1650329,
+      "modified": "2026-07-24T07:39:14Z"
+    },
+    {
+      "input": "transmission:KS",
+      "sha256": "4b102d87dac44bf8f692067bb0b6ab27c13034583d1c69552ec5decde809c904",
+      "bytes": 2035680,
+      "modified": "2026-07-24T07:39:14Z"
+    },
+    {
+      "input": "transmission:KY",
+      "sha256": "6f61b838cb93115247b3698381494783c0d23cb3ae6bbf842d46caa44605378a",
+      "bytes": 2685595,
+      "modified": "2026-07-24T07:39:15Z"
+    },
+    {
+      "input": "transmission:LA",
+      "sha256": "7fec8f323827339007425ee0dff0a03531bdc209a349eeb0361099ba63065523",
+      "bytes": 1610086,
+      "modified": "2026-07-24T07:39:15Z"
+    },
+    {
+      "input": "transmission:ME",
+      "sha256": "a98d798a5dfb40881d3680be0c87e769eff893944b800e7ce6e08ceebfec6e64",
+      "bytes": 621833,
+      "modified": "2026-07-24T07:39:16Z"
+    },
+    {
+      "input": "transmission:MD",
+      "sha256": "82a6624396aa536bda297b6b9191cfeafba939e8aa22e1d55792c11609d35608",
+      "bytes": 1197138,
+      "modified": "2026-07-24T07:39:16Z"
+    },
+    {
+      "input": "transmission:MA",
+      "sha256": "164fdb6aa7e93b4112223e135e88a3dc74cf17031efd176098bfac14859a85c4",
+      "bytes": 1097583,
+      "modified": "2026-07-24T07:39:16Z"
+    },
+    {
+      "input": "transmission:MI",
+      "sha256": "7ab7ed653cdaca3932a0f575e4bbd1fe2c9fcb13a8ac499d05d5c0e21d6971e4",
+      "bytes": 2580588,
+      "modified": "2026-07-24T07:39:17Z"
+    },
+    {
+      "input": "transmission:MN",
+      "sha256": "3368fdca512f56b58484c7b0edfc61543fd28420039a49a7bbd56c8052a772c6",
+      "bytes": 3494874,
+      "modified": "2026-07-24T07:39:18Z"
+    },
+    {
+      "input": "transmission:MS",
+      "sha256": "563acfdedf0abc03a820cf43da0cec4da1989d0bdfa62bd2a681fb52a6d1b815",
+      "bytes": 1328860,
+      "modified": "2026-07-24T07:39:18Z"
+    },
+    {
+      "input": "transmission:MO",
+      "sha256": "46a9fa0c4d97eda531f1f96fc4e97311b76951c9e9a07c5cd2c4dfbdb74daa80",
+      "bytes": 2294816,
+      "modified": "2026-07-24T07:39:19Z"
+    },
+    {
+      "input": "transmission:MT",
+      "sha256": "0130e84835ee3e644da79a9ebfea8c1c52238aec6b99c4d2a70b378ad53607c7",
+      "bytes": 3292111,
+      "modified": "2026-07-24T07:39:19Z"
+    },
+    {
+      "input": "transmission:NE",
+      "sha256": "aef137aaf322a56d3c2ac47c578fd0b1082fc3479a906812d31888c9dfb8a789",
+      "bytes": 2180797,
+      "modified": "2026-07-24T07:39:20Z"
+    },
+    {
+      "input": "transmission:NV",
+      "sha256": "f53c5fac544fc4ea0d58ae07bdd2518a312a770b43a2943baa8e680997fb96d3",
+      "bytes": 436514,
+      "modified": "2026-07-24T07:39:20Z"
+    },
+    {
+      "input": "transmission:NH",
+      "sha256": "a5d490327910c7a0daf2d758ccee0d7b2d7db1e73bcb5a3d9ab1fd7ae5062f5a",
+      "bytes": 329953,
+      "modified": "2026-07-24T07:39:20Z"
+    },
+    {
+      "input": "transmission:NJ",
+      "sha256": "10db5895b5b86675f18f40e408f45b367dec417b4da9fe3cfc444beef4085171",
+      "bytes": 568954,
+      "modified": "2026-07-24T07:39:20Z"
+    },
+    {
+      "input": "transmission:NM",
+      "sha256": "ce9e467c8e002ac74380d0fc4d2c97778136e76967cce80489bff59937947d64",
+      "bytes": 474528,
+      "modified": "2026-07-24T07:39:20Z"
+    },
+    {
+      "input": "transmission:NY",
+      "sha256": "f8920235a35c5a102c4e2806f8ec686e86c92a605421ae7371af6d94837d3d91",
+      "bytes": 4049410,
+      "modified": "2026-07-24T07:39:21Z"
+    },
+    {
+      "input": "transmission:NC",
+      "sha256": "8c4698a764865017d3349daabc07c59181f037de4a0e6fb4c610cdf776438bf2",
+      "bytes": 4265877,
+      "modified": "2026-07-24T07:39:22Z"
+    },
+    {
+      "input": "transmission:ND",
+      "sha256": "9a976916d36ffc5ca3c8e1f70563f6ae5a92afb494b5c12fd2ecac4807715d6b",
+      "bytes": 1707927,
+      "modified": "2026-07-24T07:39:23Z"
+    },
+    {
+      "input": "transmission:OH",
+      "sha256": "474304f5d96af9b04dd6060fe21a802aaecd171c5346092074aad77f337a78f0",
+      "bytes": 2717575,
+      "modified": "2026-07-24T07:39:23Z"
+    },
+    {
+      "input": "transmission:OK",
+      "sha256": "16b90b70641bec24a6db6ef64f2838c2cd1dd245f55bc34f6a7e8563b845b070",
+      "bytes": 2520976,
+      "modified": "2026-07-24T07:39:24Z"
+    },
+    {
+      "input": "transmission:OR",
+      "sha256": "503485d1160018b9850a43476459eb8759e2103be6a1997e34ee03c22aec64d6",
+      "bytes": 2434048,
+      "modified": "2026-07-24T07:39:25Z"
+    },
+    {
+      "input": "transmission:PA",
+      "sha256": "d0c57a153730749a94f47e0b2e0332b0367bd6e75bddde433dfcbbf8a7e1ff93",
+      "bytes": 2626294,
+      "modified": "2026-07-24T07:39:25Z"
+    },
+    {
+      "input": "transmission:RI",
+      "sha256": "c8011c06bfee9a6c1f9b2232df8356795266d5f45e47b727fb17b356a509a57f",
+      "bytes": 151637,
+      "modified": "2026-07-24T07:39:25Z"
+    },
+    {
+      "input": "transmission:SC",
+      "sha256": "73e45ce1f86fc197e76a79b4efff9f533a672263c9e3d1e0dba68e5e63048311",
+      "bytes": 3238399,
+      "modified": "2026-07-24T07:39:26Z"
+    },
+    {
+      "input": "transmission:SD",
+      "sha256": "6861f032b1cb83bc7e999efc1d9662639416fe68b0a1b7422198f0e2a67ed7c9",
+      "bytes": 1880264,
+      "modified": "2026-07-24T07:39:27Z"
+    },
+    {
+      "input": "transmission:TN",
+      "sha256": "7a17bac46382132ca6db256a30ed29bd273b46a0fac7035405ae0c6cf7c969f9",
+      "bytes": 2790284,
+      "modified": "2026-07-24T07:39:27Z"
+    },
+    {
+      "input": "transmission:TX",
+      "sha256": "c5a5a8cde3ff25fd91288e347c53b8f94aca0c4b854447461ead5732e18d91ea",
+      "bytes": 8501514,
+      "modified": "2026-07-24T07:39:29Z"
+    },
+    {
+      "input": "transmission:UT",
+      "sha256": "602f205cea599dd54e9afa589e3a662122c02fd63dbd1b79b0a6db44fd653c48",
+      "bytes": 2243639,
+      "modified": "2026-07-24T07:39:30Z"
+    },
+    {
+      "input": "transmission:VT",
+      "sha256": "45d8f1ea5219452e42ca72b504cdd78db2c4ccee14b60b5572f27d4343efa45c",
+      "bytes": 424949,
+      "modified": "2026-07-24T07:39:30Z"
+    },
+    {
+      "input": "transmission:VA",
+      "sha256": "8c9025a601ba63e9774c26b76c31396fb5728f835c75f60dba55923da897719b",
+      "bytes": 1186719,
+      "modified": "2026-07-24T07:39:30Z"
+    },
+    {
+      "input": "transmission:WA",
+      "sha256": "5580c8560380c54f9395a25d562786fac07a79d5049e976e2ce08d429de863a1",
+      "bytes": 3849141,
+      "modified": "2026-07-24T07:39:31Z"
+    },
+    {
+      "input": "transmission:WV",
+      "sha256": "3a564783e945f6a712e0a665ea142dab7d1b9e64851b9b9e1d7e4204310c70a8",
+      "bytes": 751262,
+      "modified": "2026-07-24T07:39:31Z"
+    },
+    {
+      "input": "transmission:WI",
+      "sha256": "8aecdd3869acd62fdf5b5df1482fa6a081ded4a527e07c9c041a635d8b09d09d",
+      "bytes": 2169149,
+      "modified": "2026-07-24T07:39:32Z"
+    },
+    {
+      "input": "transmission:WY",
+      "sha256": "260c81d5caac0403103e9138fa0c6246a9b60d1a211188ee151d22b3f0d06ab5",
+      "bytes": 2060567,
+      "modified": "2026-07-24T07:39:32Z"
+    },
+    {
+      "input": "transmission:planned",
+      "sha256": "3ec5632c6154e0b55878e9b8c63b27d62b3b61a12c4abc4e17884fca2c25e8f5",
+      "bytes": 3541614,
+      "modified": "2026-07-24T07:50:52Z"
+    }
+  ],
+  "layers": {
+    "transmission": {
+      "title": "Transmission lines",
+      "source": "HIFLD Electric Power Transmission Lines (U.S. DHS HIFLD; data by Oak Ridge National Laboratory)",
+      "licence": "Public domain (U.S. Government work, HIFLD/ORNL); modified by Enerdatics (clipped, simplified, fields reduced); some voltages inferred by HIFLD; no warranty",
+      "vintage": "HIFLD Electric Power Transmission Lines; snapshot date not recorded in the extract (unproven)",
+      "properties": [
+        "id",
+        "voltage",
+        "kv_band",
+        "type",
+        "owner",
+        "status",
+        "planned",
+        "inactive"
+      ],
+      "geometry": "LineString/MultiLineString",
+      "simplify_tolerance_deg": 0.0005,
+      "kv_bands": {
+        "<100": "under 100 kV",
+        "100-161": "100 to 161 kV",
+        "162-230": "over 161 up to 230 kV",
+        "231-345": "over 230 up to 345 kV",
+        "346-499": "over 345 and under 500 kV",
+        "500+": "500 kV and over",
+        "unknown": "voltage blank or <= 0 (HIFLD uses -999999)"
+      },
+      "coverage": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+      ],
+      "unknown_voltage_share": 0.1488,
+      "files": [
+        {
+          "path": "transmission/AK.geojson",
+          "bytes": 78310,
+          "sha256": "a7af06b138ec6cb5a3e02dd1e303e874835ab7ff396718364ffc8078900f6af6",
+          "features": 165,
+          "bbox": [
+            -152.89422,
+            55.35723,
+            -131.33867,
+            65.01722
+          ],
+          "state": "AK"
+        },
+        {
+          "path": "transmission/AL.geojson",
+          "bytes": 1140791,
+          "sha256": "750aca21e3f0e9d92cd5f4de6ff7bfd8dfc8d1efe4ef8c646f6910414f0b78ab",
+          "features": 3378,
+          "bbox": [
+            -88.85915,
+            30.24492,
+            -84.10711,
+            35.67286
+          ],
+          "state": "AL"
+        },
+        {
+          "path": "transmission/AR.geojson",
+          "bytes": 501006,
+          "sha256": "2071cbfe069ec75465ad70af20ee1687920c320d596741a4834811e3e3a1cadc",
+          "features": 1319,
+          "bbox": [
+            -95.5494,
+            32.57739,
+            -89.58396,
+            37.1712
+          ],
+          "state": "AR"
+        },
+        {
+          "path": "transmission/AZ.geojson",
+          "bytes": 447793,
+          "sha256": "5d83ffd14e6605e872ac708405b674f4013eb6f2804161aff6444b081b8b247b",
+          "features": 1093,
+          "bbox": [
+            -115.71553,
+            31.36225,
+            -107.39495,
+            38.84429
+          ],
+          "state": "AZ"
+        },
+        {
+          "path": "transmission/CA.geojson",
+          "bytes": 2091737,
+          "sha256": "0ee72d28d7953c0af85e4093180b3207980e6acfb77fbd48de3203fdd7b668f2",
+          "features": 4897,
+          "bbox": [
+            -124.22074,
+            32.55363,
+            -112.58065,
+            45.59484
+          ],
+          "state": "CA"
+        },
+        {
+          "path": "transmission/CO.geojson",
+          "bytes": 698023,
+          "sha256": "806673a92d3945e524bf0128ba46f65509bf0fb137fb6c99e1e5595e5a1db17f",
+          "features": 1657,
+          "bbox": [
+            -109.34617,
+            36.3226,
+            -100.97526,
+            42.10753
+          ],
+          "state": "CO"
+        },
+        {
+          "path": "transmission/CT.geojson",
+          "bytes": 167672,
+          "sha256": "ad67540d3eea767032482d2821c328a25dc44275c35d05969b87df20ca37a204",
+          "features": 411,
+          "bbox": [
+            -73.83579,
+            40.92331,
+            -71.6735,
+            42.19499
+          ],
+          "state": "CT"
+        },
+        {
+          "path": "transmission/DE.geojson",
+          "bytes": 90505,
+          "sha256": "9a20821a323e3def66ea79a95c763140fa688e6a6828f95c1135206eeccfc1af",
+          "features": 221,
+          "bbox": [
+            -76.1638,
+            38.29481,
+            -75.05195,
+            39.82296
+          ],
+          "state": "DE"
+        },
+        {
+          "path": "transmission/FL.geojson",
+          "bytes": 1275954,
+          "sha256": "452ecf627d54ce115f5b0fe13a9c9055eeb5ab1ad85b6a8ece3eaa53fc071782",
+          "features": 3468,
+          "bbox": [
+            -88.01068,
+            24.54756,
+            -80.0523,
+            31.93408
+          ],
+          "state": "FL"
+        },
+        {
+          "path": "transmission/GA.geojson",
+          "bytes": 1255728,
+          "sha256": "f2a756b55c75754653356703c7faa3cb7ce2fe54a90a21066cef4d357cd75f4c",
+          "features": 3409,
+          "bbox": [
+            -85.89774,
+            30.27155,
+            -80.96911,
+            35.09539
+          ],
+          "state": "GA"
+        },
+        {
+          "path": "transmission/HI.geojson",
+          "bytes": 75446,
+          "sha256": "d09024413bd07b4ff349619990a1de3a64cf81da12ad3f8a1d61629af4127b39",
+          "features": 178,
+          "bbox": [
+            -159.77934,
+            18.97368,
+            -154.88844,
+            22.21145
+          ],
+          "state": "HI"
+        },
+        {
+          "path": "transmission/IA.geojson",
+          "bytes": 559735,
+          "sha256": "ab502a1e97e711be212e992fbe27f0fe38ade0ef05c6f85435adf15c20bed013",
+          "features": 1575,
+          "bbox": [
+            -97.57873,
+            39.83493,
+            -90.18509,
+            43.66999
+          ],
+          "state": "IA"
+        },
+        {
+          "path": "transmission/ID.geojson",
+          "bytes": 483473,
+          "sha256": "fb2d31d34740c17404b28b5c7b83d93090c558b58cc22877a12a5d8de5183f8f",
+          "features": 1265,
+          "bbox": [
+            -119.04783,
+            41.11295,
+            -108.79034,
+            48.96683
+          ],
+          "state": "ID"
+        },
+        {
+          "path": "transmission/IL.geojson",
+          "bytes": 1068046,
+          "sha256": "c4b5d74945cc97e7387604f347b25e7478276910f4345c7d05f17f7d6a8e9c45",
+          "features": 2929,
+          "bbox": [
+            -91.59494,
+            37.00687,
+            -86.36045,
+            43.00874
+          ],
+          "state": "IL"
+        },
+        {
+          "path": "transmission/IN.geojson",
+          "bytes": 984602,
+          "sha256": "4452606a0f1327b8d8f77ac4f7ab0586aa42f383a76642ce1d6e7aa2915aa1e8",
+          "features": 2623,
+          "bbox": [
+            -88.08289,
+            37.64155,
+            -82.77419,
+            42.43628
+          ],
+          "state": "IN"
+        },
+        {
+          "path": "transmission/KS.geojson",
+          "bytes": 551939,
+          "sha256": "f11ef316b451e88114d2733d7fb0509c95362985767a264e49741122b76e99fd",
+          "features": 1562,
+          "bbox": [
+            -102.52882,
+            36.2229,
+            -94.35593,
+            40.54535
+          ],
+          "state": "KS"
+        },
+        {
+          "path": "transmission/KY.geojson",
+          "bytes": 1009324,
+          "sha256": "862cf7305d30a71e977c069bb16bb51070ccb9be71eac03460c5c3b645c8227c",
+          "features": 2741,
+          "bbox": [
+            -89.2106,
+            36.27109,
+            -81.67964,
+            39.26686
+          ],
+          "state": "KY"
+        },
+        {
+          "path": "transmission/LA.geojson",
+          "bytes": 628684,
+          "sha256": "38f9957b5efeea36a3655a11d4e10f8029a96b126cf15901b42bd427dbefe10a",
+          "features": 1721,
+          "bbox": [
+            -94.69829,
+            29.10353,
+            -88.55081,
+            33.29842
+          ],
+          "state": "LA"
+        },
+        {
+          "path": "transmission/MA.geojson",
+          "bytes": 338379,
+          "sha256": "10bced49fb9b2c5570248ad9aa5efc16a3e765efef93d8b670681c9cc3d58538",
+          "features": 877,
+          "bbox": [
+            -73.62883,
+            41.56369,
+            -69.96629,
+            44.32209
+          ],
+          "state": "MA"
+        },
+        {
+          "path": "transmission/MD.geojson",
+          "bytes": 356320,
+          "sha256": "2271453605e4f5b1464a9ce065169713c2ff06aeb4556b407ca73ee4d4393a02",
+          "features": 912,
+          "bbox": [
+            -80.06466,
+            37.94334,
+            -75.05195,
+            39.9278
+          ],
+          "state": "MD"
+        },
+        {
+          "path": "transmission/ME.geojson",
+          "bytes": 161818,
+          "sha256": "25705e273fe7d54d4d267897fb757ec8baaf54551100156d4cee26523e1ea23b",
+          "features": 373,
+          "bbox": [
+            -71.34212,
+            42.90486,
+            -67.28276,
+            47.35603
+          ],
+          "state": "ME"
+        },
+        {
+          "path": "transmission/MI.geojson",
+          "bytes": 820880,
+          "sha256": "f026871b257ec8dc9e6979a6fe34fe2007f6686ea7c52ff5ad41e26f15df7aeb",
+          "features": 1984,
+          "bbox": [
+            -90.88207,
+            41.47462,
+            -82.45666,
+            47.3687
+          ],
+          "state": "MI"
+        },
+        {
+          "path": "transmission/MN.geojson",
+          "bytes": 1072084,
+          "sha256": "31f811de8bc6c0357b7b4c649c59d14ecad6b59f317929607be54c3721fa2aaf",
+          "features": 2936,
+          "bbox": [
+            -101.19604,
+            43.2079,
+            -90.10248,
+            48.99967
+          ],
+          "state": "MN"
+        },
+        {
+          "path": "transmission/MO.geojson",
+          "bytes": 794180,
+          "sha256": "c8749dd2e93847da0f7ec29db535e154aaf42eb8fabb98e0b378824961cdaeff",
+          "features": 2112,
+          "bbox": [
+            -95.67349,
+            35.8613,
+            -88.85841,
+            41.50848
+          ],
+          "state": "MO"
+        },
+        {
+          "path": "transmission/MS.geojson",
+          "bytes": 583511,
+          "sha256": "e82c888c76c1160ab155d77728fbc4b08053cd1ee202e73a1f6b42f744b3a23f",
+          "features": 1559,
+          "bbox": [
+            -92.01697,
+            30.21084,
+            -87.11426,
+            35.18279
+          ],
+          "state": "MS"
+        },
+        {
+          "path": "transmission/MT.geojson",
+          "bytes": 633250,
+          "sha256": "a860076cc1bf3c3f3cc0b047c10be1f5f24af1d2435de3001399ab0e4c0b5b43",
+          "features": 1522,
+          "bbox": [
+            -117.37432,
+            44.00114,
+            -103.52397,
+            48.9992
+          ],
+          "state": "MT"
+        },
+        {
+          "path": "transmission/NC.geojson",
+          "bytes": 1531973,
+          "sha256": "7e4824065866ae43f9a3f85dba5b98b5e3fee2630f4c88d67d28366c959e5db5",
+          "features": 4355,
+          "bbox": [
+            -84.44023,
+            33.89642,
+            -75.46581,
+            36.87916
+          ],
+          "state": "NC"
+        },
+        {
+          "path": "transmission/ND.geojson",
+          "bytes": 621733,
+          "sha256": "bb672a0b9b12b1d7f4818f5111faf8babdd01d0502d7f7e435d331619128eeee",
+          "features": 1654,
+          "bbox": [
+            -104.78287,
+            44.1291,
+            -92.29443,
+            49.00055
+          ],
+          "state": "ND"
+        },
+        {
+          "path": "transmission/NE.geojson",
+          "bytes": 549599,
+          "sha256": "d3c8960ab63f6a6d449b8e30b4ae0e2e056838658b4bb1f7e268f4f8dc856172",
+          "features": 1576,
+          "bbox": [
+            -105.77963,
+            38.93358,
+            -94.34301,
+            44.13017
+          ],
+          "state": "NE"
+        },
+        {
+          "path": "transmission/NH.geojson",
+          "bytes": 109918,
+          "sha256": "d2698a67db8a9d3660702953848cf4fbd8d44485206b12113ae29f0ba2347982",
+          "features": 270,
+          "bbox": [
+            -72.65227,
+            42.56844,
+            -70.55337,
+            45.01143
+          ],
+          "state": "NH"
+        },
+        {
+          "path": "transmission/NJ.geojson",
+          "bytes": 235581,
+          "sha256": "cbec59abeae6158f54b7cecdad0454e2801dffdb594602ea8df5f81526fbb327",
+          "features": 564,
+          "bbox": [
+            -75.6261,
+            38.93657,
+            -73.49901,
+            41.5268
+          ],
+          "state": "NJ"
+        },
+        {
+          "path": "transmission/NM.geojson",
+          "bytes": 283777,
+          "sha256": "7562af386c963435ebf925e147ce67dfbfeef362cfa26b452c20dc8ba7cb3f46",
+          "features": 724,
+          "bbox": [
+            -111.4467,
+            31.76345,
+            -102.25121,
+            37.86861
+          ],
+          "state": "NM"
+        },
+        {
+          "path": "transmission/NV.geojson",
+          "bytes": 210535,
+          "sha256": "817375cd0d8615c250cba2f643a1cd5e3d2ca70f8a028ca0b4788720bd4e92b7",
+          "features": 444,
+          "bbox": [
+            -121.11308,
+            33.67522,
+            -111.39465,
+            45.59484
+          ],
+          "state": "NV"
+        },
+        {
+          "path": "transmission/NY.geojson",
+          "bytes": 1255165,
+          "sha256": "ec0e4d737256ed62d7e26f65dc4b149a73f483c06dfad75f3677d7db1169fec4",
+          "features": 3239,
+          "bbox": [
+            -79.84327,
+            40.47417,
+            -72.13181,
+            45.00489
+          ],
+          "state": "NY"
+        },
+        {
+          "path": "transmission/OH.geojson",
+          "bytes": 1099034,
+          "sha256": "bf52ff44e0dbdc1de30d5426224354dd70b1fb4a24ce19f1dc8483480e01d6a3",
+          "features": 2777,
+          "bbox": [
+            -85.46983,
+            38.18137,
+            -80.1215,
+            41.96677
+          ],
+          "state": "OH"
+        },
+        {
+          "path": "transmission/OK.geojson",
+          "bytes": 887356,
+          "sha256": "9cadeb26a26dd295eeede2758ca9e015bb08508e98dc025ab268ab2a7bd63fd9",
+          "features": 2524,
+          "bbox": [
+            -102.78695,
+            33.43427,
+            -94.17606,
+            37.915
+          ],
+          "state": "OK"
+        },
+        {
+          "path": "transmission/OR.geojson",
+          "bytes": 834187,
+          "sha256": "83454a80dec8a2f72857ca01891cbeb1ead56edfd0e50c254d8988b57c47f442",
+          "features": 1985,
+          "bbox": [
+            -124.47103,
+            34.31253,
+            -116.41208,
+            46.75449
+          ],
+          "state": "OR"
+        },
+        {
+          "path": "transmission/PA.geojson",
+          "bytes": 998570,
+          "sha256": "6df3c30eb612ccd323df28525beec96ac0e495085e34c31a755a3ece0cf84da6",
+          "features": 2482,
+          "bbox": [
+            -81.22697,
+            39.18804,
+            -74.42697,
+            42.20183
+          ],
+          "state": "PA"
+        },
+        {
+          "path": "transmission/RI.geojson",
+          "bytes": 64472,
+          "sha256": "fee2dfdf078a403047ffff69bf97320a3d9a95ffa972e3b593481dd45f8c6ca0",
+          "features": 185,
+          "bbox": [
+            -71.89123,
+            41.38629,
+            -71.14753,
+            42.1917
+          ],
+          "state": "RI"
+        },
+        {
+          "path": "transmission/SC.geojson",
+          "bytes": 1221369,
+          "sha256": "cf7c683e64b16305b73ea37e6cbdd2b441fb105ffd1069bece1fb7ce24434ff0",
+          "features": 3377,
+          "bbox": [
+            -83.80284,
+            32.13067,
+            -78.62461,
+            35.42185
+          ],
+          "state": "SC"
+        },
+        {
+          "path": "transmission/SD.geojson",
+          "bytes": 475281,
+          "sha256": "8e299408c058eaa9153392e2a1803424842f094e1c15f6028578e54cc20dd083",
+          "features": 1347,
+          "bbox": [
+            -105.20412,
+            41.81951,
+            -95.71958,
+            47.37188
+          ],
+          "state": "SD"
+        },
+        {
+          "path": "transmission/TN.geojson",
+          "bytes": 1044568,
+          "sha256": "89fb21c36b1cdb7c08d30034598f536538d1c68a918fcbb16ba3cb3778c5970b",
+          "features": 2708,
+          "bbox": [
+            -90.18866,
+            34.69449,
+            -81.67721,
+            37.2597
+          ],
+          "state": "TN"
+        },
+        {
+          "path": "transmission/TX.geojson",
+          "bytes": 2724580,
+          "sha256": "2efe7252ac97a7b725ecb87ad66e34240b619b5f1955f8a2d248ddf1b14ad62b",
+          "features": 7030,
+          "bbox": [
+            -106.84955,
+            25.88771,
+            -93.18766,
+            37.915
+          ],
+          "state": "TX"
+        },
+        {
+          "path": "transmission/UT.geojson",
+          "bytes": 668563,
+          "sha256": "765df01960e685fee5a20dbf4f75d2ce7b19bdcb6177acbd5fd3115c448f4d9d",
+          "features": 1832,
+          "bbox": [
+            -117.43779,
+            34.55042,
+            -107.18507,
+            42.42474
+          ],
+          "state": "UT"
+        },
+        {
+          "path": "transmission/VA.geojson",
+          "bytes": 747028,
+          "sha256": "29fa960cb8cbd4c5ca9e1f5d4151dca06cc076f5599ccef6ab628bde81d4e299",
+          "features": 1913,
+          "bbox": [
+            -83.75583,
+            35.78196,
+            -75.37815,
+            39.54682
+          ],
+          "state": "VA"
+        },
+        {
+          "path": "transmission/VT.geojson",
+          "bytes": 152119,
+          "sha256": "d893ce0d1940b6b2f844716e8a4adfd53da1aa9b3a06b05291932e39c16734aa",
+          "features": 367,
+          "bbox": [
+            -73.62883,
+            42.58767,
+            -71.6084,
+            45.0141
+          ],
+          "state": "VT"
+        },
+        {
+          "path": "transmission/WA.geojson",
+          "bytes": 1117396,
+          "sha256": "40b99dac759ab4e261f50d445b347fdc9ade814906eb5fb3fac07a4d38f2be57",
+          "features": 2804,
+          "bbox": [
+            -124.61138,
+            44.79641,
+            -115.58922,
+            49.00234
+          ],
+          "state": "WA"
+        },
+        {
+          "path": "transmission/WI.geojson",
+          "bytes": 906977,
+          "sha256": "33f414a6699c8ac18e3a2f7fd7ee21ee21cb1c7be95dace8dc2fe937944c85f8",
+          "features": 2411,
+          "bbox": [
+            -93.01162,
+            42.34265,
+            -87.13341,
+            46.86094
+          ],
+          "state": "WI"
+        },
+        {
+          "path": "transmission/WV.geojson",
+          "bytes": 408711,
+          "sha256": "c1782384fa24108c664bc7e5b1a3f6a89c37e73ddc630698adfb6138a137d89e",
+          "features": 984,
+          "bbox": [
+            -82.92903,
+            36.87848,
+            -77.51476,
+            40.72291
+          ],
+          "state": "WV"
+        },
+        {
+          "path": "transmission/WY.geojson",
+          "bytes": 423482,
+          "sha256": "713706a1808c3bff4d5ce6e74bff871043c37010bfd886ab07cb278722353d58",
+          "features": 1098,
+          "bbox": [
+            -112.15514,
+            40.2541,
+            -103.04881,
+            45.32164
+          ],
+          "state": "WY"
+        }
+      ],
+      "counts": {
+        "input_features": 95539,
+        "output_features": 95537,
+        "repaired_invalid_geometry": 4,
+        "dropped": {
+          "null_or_empty_geometry": 0,
+          "empty_after_simplify": 1,
+          "planned_outside_all_states": 0
+        },
+        "info": {
+          "unique_lines": 93920,
+          "lines_in_multiple_states": 1582,
+          "pieces_dissolved": 1619,
+          "features_without_id": 0,
+          "attribute_conflicts": 0,
+          "unknown_voltage": 13972,
+          "kv_band_counts": {
+            "<100": 27179,
+            "100-161": 42109,
+            "162-230": 7191,
+            "231-345": 2606,
+            "346-499": 7,
+            "500+": 855,
+            "unknown": 13972
+          },
+          "type_counts": {
+            "AC": 77679,
+            "DC": 12,
+            "not stated": 16228
+          },
+          "status_counts": {
+            "In Service": 73022,
+            "Inactive": 90,
+            "Not Available": 20779,
+            "Proposed": 2,
+            "Under Construction": 26
+          },
+          "planned_from_status": 28,
+          "inactive": 90,
+          "below_69_kv": 4044,
+          "below_100_kv": 27179,
+          "ignored_input_files": 3,
+          "planned_lines": {
+            "input_files": 1,
+            "included": false,
+            "reason": "Planned-line source not recorded (spec: publish only once confirmed); pass --planned-source to include.",
+            "features_skipped": 707
+          },
+          "note": "Counts above are per unique line. A line crossing a state border is written, whole, into every state file it came from; dedupe by id when merging files."
+        }
+      }
+    },
+    "plants": {
+      "included": false,
+      "reason": "No power-plant input was supplied for this build.",
+      "files": []
+    },
+    "boundaries_states": {
+      "title": "State boundaries",
+      "source": "U.S. Census Bureau cartographic boundary file (states)",
+      "licence": "Public domain (U.S. Government work, U.S. Census Bureau); modified by Enerdatics (filtered to the 50 states, DC and Puerto Rico; simplified); no warranty",
+      "vintage": "Census cartographic boundary file 2024, 1:5,000,000",
+      "properties": [
+        "name",
+        "code"
+      ],
+      "geometry": "Polygon/MultiPolygon",
+      "simplify_tolerance_deg": 0.001,
+      "coverage": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "PR",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+      ],
+      "files": [
+        {
+          "path": "boundaries/states.geojson",
+          "bytes": 1088324,
+          "sha256": "dced88c95deff9c90d8d234a1b5fa9efd15d269bc4df795a98aaa90eaf45d81d",
+          "features": 52,
+          "bbox": [
+            -179.14734,
+            17.87831,
+            179.77847,
+            71.35256
+          ]
+        }
+      ],
+      "counts": {
+        "input_features": 56,
+        "output_features": 52,
+        "repaired_invalid_geometry": 0,
+        "dropped": {
+          "not_50_states_dc_pr": 4,
+          "null_or_empty_geometry": 0,
+          "empty_after_simplify": 0
+        }
+      }
+    },
+    "boundaries_iso_rto": {
+      "included": false,
+      "reason": "No ISO/RTO boundary input was supplied for this build.",
+      "files": []
+    }
+  }
+}
