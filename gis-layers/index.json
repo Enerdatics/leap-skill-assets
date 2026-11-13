@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T09:12:51+00:00",
+  "generated_at": "2026-11-13T11:53:59+00:00",
   "vintage_note": "Snapshot date not recorded in the source extract",
   "crs": "EPSG:4326",
   "coordinate_decimals": 5,
@@ -404,6 +404,12 @@
       "sha256": "10bce7419e3d9dd0d1cbc76c36e1a8e0bfd931f6884e97c218787c32a7bb3189",
       "bytes": 7595191,
       "modified": "2026-07-24T10:23:33Z"
+    },
+    {
+      "input": "boundaries_iso_rto",
+      "sha256": "28a09cf31a2888b98d75a6f54e9917fcf306337727e4a5c9f3f01c5a4ec00b3e",
+      "bytes": 16560128,
+      "modified": "2025-08-25T18:10:12Z"
     },
     {
       "input": "transmission:AL",
@@ -1572,6 +1578,7 @@
         "WV",
         "WY"
       ],
+      "ref": "090112644fbb009cbad514150be1030a5254345b",
       "files": [
         {
           "path": "gas_pipelines/AK.geojson",
@@ -2300,6 +2307,7 @@
         "WI",
         "WY"
       ],
+      "ref": "090112644fbb009cbad514150be1030a5254345b",
       "files": [
         {
           "path": "gas_pipelines_planned/AK.geojson",
@@ -2718,6 +2726,7 @@
         "WY"
       ],
       "coverage_basis": "national dataset: a state without a file has no plants in it",
+      "ref": "090112644fbb009cbad514150be1030a5254345b",
       "files": [
         {
           "path": "plants/AK.geojson",
@@ -3544,6 +3553,7 @@
         "WV",
         "WY"
       ],
+      "ref": "090112644fbb009cbad514150be1030a5254345b",
       "files": [
         {
           "path": "boundaries/states.geojson",
@@ -3570,9 +3580,38 @@
       }
     },
     "boundaries_iso_rto": {
-      "included": false,
-      "reason": "No ISO/RTO boundary input was supplied for this build.",
-      "files": []
+      "title": "ISO/RTO boundaries (approximate)",
+      "source": "HIFLD Independent System Operators (archive snapshot); approximate boundaries",
+      "licence": "Public domain (U.S. Government work, HIFLD archive snapshot); modified by Enerdatics (simplified, fields reduced); approximate; no warranty",
+      "vintage": "HIFLD Independent System Operators, source date June 2020 (validated May 2021)",
+      "properties": [
+        "name"
+      ],
+      "geometry": "Polygon/MultiPolygon",
+      "simplify_tolerance_deg": 0.001,
+      "files": [
+        {
+          "path": "boundaries/iso_rto.geojson",
+          "bytes": 2099549,
+          "sha256": "a301a2bd8446c31f3773de0df4edadae17a52d1075e52107fa566cc5183c8fed",
+          "features": 7,
+          "bbox": [
+            -124.40972,
+            25.83706,
+            -66.95013,
+            49.38428
+          ]
+        }
+      ],
+      "counts": {
+        "input_features": 7,
+        "output_features": 7,
+        "repaired_invalid_geometry": 0,
+        "dropped": {
+          "null_or_empty_geometry": 0,
+          "empty_after_simplify": 0
+        }
+      }
     }
   }
 }

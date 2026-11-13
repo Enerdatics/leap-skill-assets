@@ -25,6 +25,7 @@ Reference layers for the Leap gis-map skill: GeoJSON (EPSG:4326, coordinates rou
 - Vintage: Jan 2020
 - Coverage: AK, AL, AR, AZ, CA, CO, CT, DE, FL, GA, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY (no data for: DC, HI, PR)
 - Files: 49, features: 33,646
+- Files unchanged since commit `090112644fbb009cbad514150be1030a5254345b` of this repository and served from it (`ref` in index.json); they are not in this folder. The sha256 values above still apply
 - Operating segments: 32,907 (Gathering 69 segments / 4,100 km, Interstate 17,959 segments / 245,667 km, Intrastate 14,879 segments / 120,866 km); 728 touch more than one state and appear, whole, in each of those state files (dedupe by `id`)
 - `offshore`: 1,093 segments touch no (coast-clipped) state polygon and are filed under the nearest state. Basis: touches no US state polygon and no non-US land polygon (countries input)
 - Dropped as lying on non-US land only (Canada, Mexico): 0
@@ -43,6 +44,7 @@ Reference layers for the Leap gis-map skill: GeoJSON (EPSG:4326, coordinates rou
 - Vintage: GEM Global Gas Infrastructure Tracker; release date not recorded in the extract (unproven)
 - Coverage: AK, AL, AZ, CO, FL, GA, ID, IL, LA, MN, MS, NC, ND, NM, NV, OH, PA, TN, TX, VA, WI, WY (no data for: AR, CA, CT, DC, DE, HI, IA, IN, KS, KY, MA, MD, ME, MI, MO, MT, NE, NH, NJ, NY, OK, OR, PR, RI, SC, SD, UT, VT, WA, WV)
 - Files: 22, features: 74
+- Files unchanged since commit `090112644fbb009cbad514150be1030a5254345b` of this repository and served from it (`ref` in index.json); they are not in this folder. The sha256 values above still apply
 - Features: 57 (40 proposed, 17 under construction; `planned` = 1); 15 touch more than one state and appear, whole, in each of those state files (dedupe by `id`). One project can be several features
 - `capacity_bcm_y`: GEM capacity in bcm/y, blank for 9 features
 - `id` is the feature's row number in the GEM extract (it has no GEM project id): stable within one extract, not across releases
@@ -56,6 +58,7 @@ Reference layers for the Leap gis-map skill: GeoJSON (EPSG:4326, coordinates rou
 - Vintage: EIA-860M, September 2026 (generator inventory as of that month)
 - Coverage: AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY
 - Files: 52, features: 5,460
+- Files unchanged since commit `090112644fbb009cbad514150be1030a5254345b` of this repository and served from it (`ref` in index.json); they are not in this folder. The sha256 values above still apply
 - Plants: 5,289 operating, 171 planned (`status`); one point per plant and status, aggregated from EIA-860M generator rows. A plant with a planned expansion appears once per status
 - Conventional only: solar, wind and battery plants excluded (11,014 plants whose largest share of nameplate MW is solar, wind or battery storage, even if they also have a conventional unit)
 - `nameplate_mw` and `generators` count only a plant's conventional units; `has_renewable_units` = it also has solar, wind or battery units, not counted (93 plants)
@@ -73,8 +76,13 @@ Reference layers for the Leap gis-map skill: GeoJSON (EPSG:4326, coordinates rou
 - Vintage: Census cartographic boundary file 2024, 1:5,000,000
 - Coverage: AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY
 - Files: 1, features: 52
+- Files unchanged since commit `090112644fbb009cbad514150be1030a5254345b` of this repository and served from it (`ref` in index.json); they are not in this folder. The sha256 values above still apply
 - Simplified at 0.001 degrees (about 110 m)
 
-## Not in this build
+## ISO/RTO boundaries (approximate)
 
-- ISO/RTO boundaries (approximate): No ISO/RTO boundary input was supplied for this build.
+- Source: HIFLD Independent System Operators (archive snapshot); approximate boundaries
+- Licence: Public domain (U.S. Government work, HIFLD archive snapshot); modified by Enerdatics (simplified, fields reduced); approximate; no warranty
+- Vintage: HIFLD Independent System Operators, source date June 2020 (validated May 2021)
+- Files: 1, features: 7
+- Simplified at 0.001 degrees (about 110 m)

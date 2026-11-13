@@ -1,1 +1,0 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"id":10,"pipeline_name":"Gulfstream Natural Gas Pipeline","status":"construction","owner":"Enbridge [50.00%]; Williams Companies [50.00%]","start_year":2022,"capacity_bcm_y":0.8,"length_km":5.532,"planned":1},"geometry":{"type":"LineString","coordinates":[[-82.40383,27.79436],[-82.41656,27.74574]]}}]}

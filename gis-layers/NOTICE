@@ -33,3 +33,7 @@ Per layer (attribution; licence):
 - State boundaries: U.S. Census Bureau cartographic boundary file (states).
   Licence: Public domain (U.S. Government work, U.S. Census Bureau); modified by Enerdatics (filtered to the 50 states, DC and Puerto Rico; simplified); no warranty.
   Vintage: Census cartographic boundary file 2024, 1:5,000,000.
+
+- ISO/RTO boundaries (approximate): HIFLD Independent System Operators (archive snapshot); approximate boundaries.
+  Licence: Public domain (U.S. Government work, HIFLD archive snapshot); modified by Enerdatics (simplified, fields reduced); approximate; no warranty.
+  Vintage: HIFLD Independent System Operators, source date June 2020 (validated May 2021).
