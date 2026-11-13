@@ -3,7 +3,9 @@ NOTICE: data licences for this folder
 Enerdatics claims no copyright in the data files in this folder (the .geojson files and the counts in
 index.json). Any copyright or "All rights reserved" notice elsewhere in this repository does not apply
 to them.
-They are derived from U.S. Government works in the public domain, modified as stated below.
+Except for the layer "Natural gas pipelines (planned: proposed and under construction)", the layers are derived from U.S. Government works in the public
+domain. Those exceptions are not a U.S. Government work: they come from a third-party source and are
+used under the licence stated for them below, which governs their reuse (attribution where required).
 Everything here is provided as is, with no warranty of accuracy, completeness or fitness for any purpose.
 
 Per layer (attribution; licence):
@@ -11,6 +13,22 @@ Per layer (attribution; licence):
 - Transmission lines: HIFLD Electric Power Transmission Lines (U.S. DHS HIFLD; data by Oak Ridge National Laboratory).
   Licence: Public domain (U.S. Government work, HIFLD/ORNL); modified by Enerdatics (clipped, simplified, fields reduced); some voltages inferred by HIFLD; no warranty.
   Vintage: HIFLD Electric Power Transmission Lines; snapshot date not recorded in the extract (unproven).
+
+- Natural gas pipelines (operating): U.S. Energy Information Administration, Natural Gas Interstate and Intrastate Pipelines map layer.
+  Licence: Public domain (U.S. Government work, U.S. Energy Information Administration); modified by Enerdatics (operating segments only, filed by state, simplified, fields reduced); no warranty.
+  Vintage: Jan 2020.
+
+- Natural gas pipelines (planned: proposed and under construction): Global Energy Monitor, Global Gas Infrastructure Tracker (US subset).
+  Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+  Attribution (required): Global Energy Monitor, Global Gas Infrastructure Tracker, CC BY 4.0 (https://globalenergymonitor.org/).
+  Modified by Enerdatics: US proposed and under-construction pipelines only; filed by state; simplified; fields reduced and renamed; lengths computed; no warranty.
+  Not a federal source; routes approximate.
+  Vintage: GEM Global Gas Infrastructure Tracker; release date not recorded in the extract (unproven).
+
+- Existing conventional power plants (EIA-860M): U.S. Energy Information Administration, Form EIA-860M Preliminary Monthly Electric Generator Inventory (September 2026), Operating and Planned tabs incl. Puerto Rico.
+  Licence: Public domain. Source: U.S. Energy Information Administration, Form EIA-860M (September 2026).
+  Modified by Enerdatics: generator rows aggregated to one point per plant and status (operating / planned); conventional plants only (plants mainly solar, wind or battery storage left out); retired and canceled generators excluded; fields reduced; coordinates rounded; no warranty.
+  Vintage: EIA-860M, September 2026 (generator inventory as of that month).
 
 - State boundaries: U.S. Census Bureau cartographic boundary file (states).
   Licence: Public domain (U.S. Government work, U.S. Census Bureau); modified by Enerdatics (filtered to the 50 states, DC and Puerto Rico; simplified); no warranty.

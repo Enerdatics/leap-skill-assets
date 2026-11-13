@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-12T10:48:53+00:00",
+  "generated_at": "2026-11-13T09:12:51+00:00",
   "vintage_note": "Snapshot date not recorded in the source extract",
   "crs": "EPSG:4326",
   "coordinate_decimals": 5,
@@ -380,6 +380,30 @@
       "sha256": "c9db0e395c11a1f94a8017fde4f4c7cbee1dca6eb37ba8f1ccaab927df70885f",
       "bytes": 1122055,
       "modified": "2026-11-11T09:04:07Z"
+    },
+    {
+      "input": "plants",
+      "sha256": "bcef74e1af991680731aeecfda967f5950db4ce739bb584edd8b8774c7e6da17",
+      "bytes": 14013970,
+      "modified": "2026-11-13T08:07:06Z"
+    },
+    {
+      "input": "countries",
+      "sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f",
+      "bytes": 838726,
+      "modified": "2026-11-12T10:02:10Z"
+    },
+    {
+      "input": "gas_pipelines",
+      "sha256": "bfd9757e299926748b9806ab92c080f7fdc7319a1df5c12f75ee35be3791ac56",
+      "bytes": 2954667,
+      "modified": "2026-11-13T08:07:36Z"
+    },
+    {
+      "input": "gas_pipelines_planned",
+      "sha256": "10bce7419e3d9dd0d1cbc76c36e1a8e0bfd931f6884e97c218787c32a7bb3189",
+      "bytes": 7595191,
+      "modified": "2026-07-24T10:23:33Z"
     },
     {
       "input": "transmission:AL",
@@ -768,6 +792,7 @@
         "WY"
       ],
       "unknown_voltage_share": 0.1488,
+      "ref": "589053ebaa4b8514f5bdb185620b5b84eaa58058",
       "files": [
         {
           "path": "transmission/AK.geojson",
@@ -1472,10 +1497,1987 @@
         }
       }
     },
+    "gas_pipelines": {
+      "title": "Natural gas pipelines (operating)",
+      "source": "U.S. Energy Information Administration, Natural Gas Interstate and Intrastate Pipelines map layer",
+      "licence": "Public domain (U.S. Government work, U.S. Energy Information Administration); modified by Enerdatics (operating segments only, filed by state, simplified, fields reduced); no warranty",
+      "source_url": "https://www.eia.gov/maps/map_data/NaturalGas_InterIntrastate_Pipelines_US_EIA.zip",
+      "vintage": "Jan 2020",
+      "properties": [
+        "id",
+        "pipe_type",
+        "operator",
+        "status",
+        "length_km",
+        "offshore"
+      ],
+      "geometry": "LineString/MultiLineString",
+      "simplify_tolerance_deg": 0.0005,
+      "pipe_types": [
+        "Interstate",
+        "Intrastate",
+        "Gathering"
+      ],
+      "has_capacity": false,
+      "notes": "EIA's pipeline layer has no capacity, diameter or throughput field: only pipe type, operator and status. Operating pipelines only; planned pipelines are not included. id = row number in the EIA source file, not stable across releases.",
+      "id_basis": "source row number (1-based); stable within one release, not across releases",
+      "coverage": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DE",
+        "FL",
+        "GA",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+      ],
+      "files": [
+        {
+          "path": "gas_pipelines/AK.geojson",
+          "bytes": 1193,
+          "sha256": "441c5411db9c945f69a9e5599224d7a1bcdb27f80af5b2bfe9785e8161acfdd3",
+          "features": 1,
+          "bbox": [
+            -151.55892,
+            60.11454,
+            -151.25557,
+            60.49997
+          ],
+          "state": "AK"
+        },
+        {
+          "path": "gas_pipelines/AL.geojson",
+          "bytes": 65754,
+          "sha256": "db181730fc59dbcbf7095af5f4707c05b1f24357d9a2519d5e7e5bc97de848e6",
+          "features": 220,
+          "bbox": [
+            -90.89796,
+            27.52927,
+            -82.5633,
+            35.36077
+          ],
+          "state": "AL"
+        },
+        {
+          "path": "gas_pipelines/AR.geojson",
+          "bytes": 266277,
+          "sha256": "7f27c31f5223a23892f0b6f3d13a26abbab60aa79250d988ea33e5a11416801b",
+          "features": 692,
+          "bbox": [
+            -96.30089,
+            32.69178,
+            -89.72108,
+            36.78888
+          ],
+          "state": "AR"
+        },
+        {
+          "path": "gas_pipelines/AZ.geojson",
+          "bytes": 67920,
+          "sha256": "726d7d41ba3a458d420b42cfa2db8f997795a4121697d377b8ba5f9725fe281c",
+          "features": 213,
+          "bbox": [
+            -115.39528,
+            31.3341,
+            -109.00763,
+            36.99769
+          ],
+          "state": "AZ"
+        },
+        {
+          "path": "gas_pipelines/CA.geojson",
+          "bytes": 351117,
+          "sha256": "59d51dc1f10f3decd84b8e68d41d7b5124b0b6bcec2e505de0e396067ff6b2bb",
+          "features": 1306,
+          "bbox": [
+            -124.20443,
+            32.56119,
+            -114.03792,
+            42.14234
+          ],
+          "state": "CA"
+        },
+        {
+          "path": "gas_pipelines/CO.geojson",
+          "bytes": 96837,
+          "sha256": "32c2175bcf1dda26dbe071699dd122374053ae0a407bf7fc34b82da355156bcf",
+          "features": 238,
+          "bbox": [
+            -109.68029,
+            36.68639,
+            -94.4787,
+            43.28294
+          ],
+          "state": "CO"
+        },
+        {
+          "path": "gas_pipelines/CT.geojson",
+          "bytes": 123796,
+          "sha256": "bce8d50e13dc3a887ccfd5c010b7f092c2b28ac071fde64702899fe64b4f19a3",
+          "features": 487,
+          "bbox": [
+            -73.6766,
+            40.92958,
+            -71.76112,
+            42.03907
+          ],
+          "state": "CT"
+        },
+        {
+          "path": "gas_pipelines/DE.geojson",
+          "bytes": 9707,
+          "sha256": "f4b9fb8655cd27dfb0fc16bae89d12fc54677d197a7bda4ff229931c2c469bab",
+          "features": 19,
+          "bbox": [
+            -75.78491,
+            38.34319,
+            -75.19069,
+            39.9411
+          ],
+          "state": "DE"
+        },
+        {
+          "path": "gas_pipelines/FL.geojson",
+          "bytes": 75179,
+          "sha256": "e0b1cbc8b994543274a6ead9e3badee7d48dc09a2efe9fe3aa1a3fbd49d1a12a",
+          "features": 277,
+          "bbox": [
+            -87.68909,
+            25.38629,
+            -80.08743,
+            32.26974
+          ],
+          "state": "FL"
+        },
+        {
+          "path": "gas_pipelines/GA.geojson",
+          "bytes": 51517,
+          "sha256": "0eb933f7baf21d27d1ea1375b4ca4d10064f070cd0213f9ad2a88d14952a0760",
+          "features": 183,
+          "bbox": [
+            -86.00921,
+            30.62467,
+            -81.0,
+            35.09695
+          ],
+          "state": "GA"
+        },
+        {
+          "path": "gas_pipelines/IA.geojson",
+          "bytes": 154737,
+          "sha256": "11c38187df9eeff48be7d45a3eac0b34e54cac74b11d22461021b0c3472966ae",
+          "features": 587,
+          "bbox": [
+            -96.74778,
+            40.48895,
+            -88.42464,
+            45.93551
+          ],
+          "state": "IA"
+        },
+        {
+          "path": "gas_pipelines/ID.geojson",
+          "bytes": 13803,
+          "sha256": "55feec9b2d50763548459ca481ced12f6862b16a24c125b64ea8585259b1bd62",
+          "features": 48,
+          "bbox": [
+            -118.59862,
+            40.16991,
+            -111.04561,
+            49.00084
+          ],
+          "state": "ID"
+        },
+        {
+          "path": "gas_pipelines/IL.geojson",
+          "bytes": 338230,
+          "sha256": "529c7e08705ddfb58bbb64d2f280e7c7236ff1a09f77a8281b5fca0c44c94e0c",
+          "features": 1273,
+          "bbox": [
+            -91.52051,
+            36.9243,
+            -84.83245,
+            42.59635
+          ],
+          "state": "IL"
+        },
+        {
+          "path": "gas_pipelines/IN.geojson",
+          "bytes": 59776,
+          "sha256": "5a014f924d3db27977fd2c2e162c3fb4d9f7fed26322fe5742a234469d666a5f",
+          "features": 210,
+          "bbox": [
+            -87.93478,
+            37.6704,
+            -84.34285,
+            41.94745
+          ],
+          "state": "IN"
+        },
+        {
+          "path": "gas_pipelines/KS.geojson",
+          "bytes": 196827,
+          "sha256": "37099e4dbee4256a6503e91b254f61f2569a2df3724d758050d4c3494d257561",
+          "features": 691,
+          "bbox": [
+            -108.32896,
+            35.81956,
+            -94.4787,
+            43.28294
+          ],
+          "state": "KS"
+        },
+        {
+          "path": "gas_pipelines/KY.geojson",
+          "bytes": 218970,
+          "sha256": "f16028e5ee1317a402ac91377aec2ec48a1a4db99a1e21a93037ca5fd7ff0620",
+          "features": 816,
+          "bbox": [
+            -89.93024,
+            33.78383,
+            -81.85178,
+            39.10272
+          ],
+          "state": "KY"
+        },
+        {
+          "path": "gas_pipelines/LA.geojson",
+          "bytes": 978973,
+          "sha256": "cb2a8e2f384b44dd8b8bfc8a9986c7fc0778b5dddf2672b677ef63aabdcf6aa4",
+          "features": 3508,
+          "bbox": [
+            -97.58121,
+            27.13007,
+            -87.87101,
+            34.31903
+          ],
+          "state": "LA"
+        },
+        {
+          "path": "gas_pipelines/MA.geojson",
+          "bytes": 37275,
+          "sha256": "228e44b015d297894291afe25a4a12372229f24997dfd5472019a653ee376547",
+          "features": 135,
+          "bbox": [
+            -73.42132,
+            41.60082,
+            -70.51906,
+            42.99571
+          ],
+          "state": "MA"
+        },
+        {
+          "path": "gas_pipelines/MD.geojson",
+          "bytes": 18903,
+          "sha256": "5095e156321ac2a226bbee7c9874bf2163bdca34272d4d72dde26f4c01cb5a0a",
+          "features": 61,
+          "bbox": [
+            -79.48403,
+            38.34319,
+            -75.19069,
+            40.04707
+          ],
+          "state": "MD"
+        },
+        {
+          "path": "gas_pipelines/ME.geojson",
+          "bytes": 13162,
+          "sha256": "5dd1f7976547e7b2b9fa53bf0cee0b10c589ac95caa1fdcd831380895e57fe39",
+          "features": 26,
+          "bbox": [
+            -71.61261,
+            43.1095,
+            -67.43964,
+            45.22126
+          ],
+          "state": "ME"
+        },
+        {
+          "path": "gas_pipelines/MI.geojson",
+          "bytes": 112800,
+          "sha256": "91849bab906762b48216f66fc9f11d34062da4cfb7eba5ecc8b44a53c1b9267e",
+          "features": 396,
+          "bbox": [
+            -90.55531,
+            40.73709,
+            -80.91838,
+            47.1936
+          ],
+          "state": "MI"
+        },
+        {
+          "path": "gas_pipelines/MN.geojson",
+          "bytes": 121035,
+          "sha256": "8b750228d5eb762e387de5b5f363e809f76d4ce6dc71a07582b6b04b3f0cf169",
+          "features": 441,
+          "bbox": [
+            -101.60332,
+            43.32672,
+            -91.0249,
+            49.00042
+          ],
+          "state": "MN"
+        },
+        {
+          "path": "gas_pipelines/MO.geojson",
+          "bytes": 120046,
+          "sha256": "868af9cdad5816a9fbfb01837713859b9a76d6f43e6cc2fe6fc28e1fb19000f7",
+          "features": 347,
+          "bbox": [
+            -108.32896,
+            36.20776,
+            -87.56007,
+            43.28294
+          ],
+          "state": "MO"
+        },
+        {
+          "path": "gas_pipelines/MS.geojson",
+          "bytes": 196032,
+          "sha256": "2e4fbb428e278377cf5176a59b6a6675dc27097f6137aeb74c5e525abca1dc63",
+          "features": 718,
+          "bbox": [
+            -94.05189,
+            29.33364,
+            -82.65843,
+            38.36087
+          ],
+          "state": "MS"
+        },
+        {
+          "path": "gas_pipelines/MT.geojson",
+          "bytes": 417892,
+          "sha256": "ccc29088e70eaef7d12aa680d84e1fcd5c86813fcca82bc0736c873ad06f4502",
+          "features": 1457,
+          "bbox": [
+            -114.32772,
+            44.70126,
+            -103.9232,
+            48.99955
+          ],
+          "state": "MT"
+        },
+        {
+          "path": "gas_pipelines/NC.geojson",
+          "bytes": 27445,
+          "sha256": "14397004e5e6c53a09491ab007b97fb11459ce6543be5146f41aa978c89efe3b",
+          "features": 97,
+          "bbox": [
+            -82.91046,
+            34.8737,
+            -77.02527,
+            36.99648
+          ],
+          "state": "NC"
+        },
+        {
+          "path": "gas_pipelines/ND.geojson",
+          "bytes": 33672,
+          "sha256": "013e32a2cf21ed8f0d3b50939254770f83610e27420d4cac7eb82409753ea713",
+          "features": 115,
+          "bbox": [
+            -105.2235,
+            45.00034,
+            -96.56291,
+            48.99571
+          ],
+          "state": "ND"
+        },
+        {
+          "path": "gas_pipelines/NE.geojson",
+          "bytes": 62509,
+          "sha256": "8a236c16509502ac0c99f1a710acc35d7c21106af4e3c79bb5a02e294f153bbc",
+          "features": 186,
+          "bbox": [
+            -108.32896,
+            37.43539,
+            -94.4787,
+            43.28294
+          ],
+          "state": "NE"
+        },
+        {
+          "path": "gas_pipelines/NH.geojson",
+          "bytes": 17856,
+          "sha256": "e20fde174396b6357d10e0f68b6c8c61b3403acae63629d8f008ae2409e76674",
+          "features": 43,
+          "bbox": [
+            -71.61261,
+            42.66915,
+            -70.40745,
+            45.03208
+          ],
+          "state": "NH"
+        },
+        {
+          "path": "gas_pipelines/NJ.geojson",
+          "bytes": 40835,
+          "sha256": "551dee0a36040332beb3cc89df5d5f582471ab60cd9c06c7e90df18954861a56",
+          "features": 115,
+          "bbox": [
+            -75.45557,
+            39.73274,
+            -73.68875,
+            41.3347
+          ],
+          "state": "NJ"
+        },
+        {
+          "path": "gas_pipelines/NM.geojson",
+          "bytes": 289863,
+          "sha256": "7bc7b5055072e936f56a4e6ec5ddae1bff0a777f6630ea5e138ca8e0baebbb42",
+          "features": 1028,
+          "bbox": [
+            -110.34553,
+            31.33857,
+            -102.78884,
+            37.02202
+          ],
+          "state": "NM"
+        },
+        {
+          "path": "gas_pipelines/NV.geojson",
+          "bytes": 22426,
+          "sha256": "591c25faa96786f5039054f45fc783a1c0767c38b1988c5591c48c30ccfaf9cb",
+          "features": 72,
+          "bbox": [
+            -120.09242,
+            34.88333,
+            -114.03792,
+            41.99786
+          ],
+          "state": "NV"
+        },
+        {
+          "path": "gas_pipelines/NY.geojson",
+          "bytes": 577004,
+          "sha256": "e811a634bcf43f16b91d227ee9a2eed2dec244aae4770936e33f69fecda44eed",
+          "features": 2227,
+          "bbox": [
+            -79.84243,
+            40.4251,
+            -73.22396,
+            45.01475
+          ],
+          "state": "NY"
+        },
+        {
+          "path": "gas_pipelines/OH.geojson",
+          "bytes": 241066,
+          "sha256": "56d37ba9d89b5510c27d953bc62a44c89c9a2fcb78e17f01d8bfe707dbc0598a",
+          "features": 894,
+          "bbox": [
+            -87.42003,
+            38.32804,
+            -80.28286,
+            42.2539
+          ],
+          "state": "OH"
+        },
+        {
+          "path": "gas_pipelines/OK.geojson",
+          "bytes": 1063402,
+          "sha256": "fd3714a80527154427b280667c7d5283f2f6ccac030cf652360410ff9fe789ff",
+          "features": 3340,
+          "bbox": [
+            -102.41235,
+            33.02406,
+            -94.05187,
+            39.0308
+          ],
+          "state": "OK"
+        },
+        {
+          "path": "gas_pipelines/OR.geojson",
+          "bytes": 20221,
+          "sha256": "b567317ceb5502a1391015b83ec29c4b5f3e5a27fe1f1c436d31b8b7f3476f37",
+          "features": 58,
+          "bbox": [
+            -124.39611,
+            41.40323,
+            -116.97443,
+            47.33019
+          ],
+          "state": "OR"
+        },
+        {
+          "path": "gas_pipelines/PA.geojson",
+          "bytes": 330330,
+          "sha256": "d05ce720ffb030f5ba60d25ed8edef6bfea2099be735bba8efbcc5dfb6058940",
+          "features": 1250,
+          "bbox": [
+            -80.79624,
+            39.59296,
+            -74.73987,
+            42.24902
+          ],
+          "state": "PA"
+        },
+        {
+          "path": "gas_pipelines/RI.geojson",
+          "bytes": 6103,
+          "sha256": "30e43d5569fa7168ae1ef9463a5e627423dafc70040cb301ce09b641dfff7fc4",
+          "features": 23,
+          "bbox": [
+            -71.79883,
+            41.51149,
+            -71.13739,
+            42.20289
+          ],
+          "state": "RI"
+        },
+        {
+          "path": "gas_pipelines/SC.geojson",
+          "bytes": 68141,
+          "sha256": "c6d0f410849665c5908c34f05d90a8b78cd75d2e2e6af6d478750b619c9f9bf6",
+          "features": 259,
+          "bbox": [
+            -83.03934,
+            32.08646,
+            -78.91065,
+            35.19583
+          ],
+          "state": "SC"
+        },
+        {
+          "path": "gas_pipelines/SD.geojson",
+          "bytes": 30000,
+          "sha256": "7a0f9513f0f4fe079f512d53b3408587142d3b232f5dd1b0df2eeea32aaed95b",
+          "features": 109,
+          "bbox": [
+            -104.27238,
+            42.44838,
+            -96.44877,
+            46.05229
+          ],
+          "state": "SD"
+        },
+        {
+          "path": "gas_pipelines/TN.geojson",
+          "bytes": 58553,
+          "sha256": "4894a6d9929e8c15392a41c1778f0e499b53eb2b7144ca786a31bcf2a3a1c3cc",
+          "features": 219,
+          "bbox": [
+            -90.19339,
+            33.78383,
+            -82.23399,
+            38.36087
+          ],
+          "state": "TN"
+        },
+        {
+          "path": "gas_pipelines/TX.geojson",
+          "bytes": 2135276,
+          "sha256": "7f264c77ebf30bbd4868b1e02e678f3702bd46475c62851d588371d3898982b4",
+          "features": 7548,
+          "bbox": [
+            -106.58667,
+            25.9161,
+            -90.70211,
+            37.5533
+          ],
+          "state": "TX"
+        },
+        {
+          "path": "gas_pipelines/UT.geojson",
+          "bytes": 28677,
+          "sha256": "0a64f5355e973ae75e42c7ec5b6d6382cdfb2bb127876b5d6b0fedc8f2c4e988",
+          "features": 89,
+          "bbox": [
+            -120.00088,
+            36.43943,
+            -108.99221,
+            42.00166
+          ],
+          "state": "UT"
+        },
+        {
+          "path": "gas_pipelines/VA.geojson",
+          "bytes": 53445,
+          "sha256": "e662216be4cd7f7be3cee5ceca5a6de2db850d07dcd2637cc813837b88a7c1c8",
+          "features": 189,
+          "bbox": [
+            -82.56275,
+            36.3185,
+            -75.9776,
+            39.35617
+          ],
+          "state": "VA"
+        },
+        {
+          "path": "gas_pipelines/VT.geojson",
+          "bytes": 9338,
+          "sha256": "71d524441b489c3d823ffa07fcf0a5bdf9f8061be04e28e0d3be3905ba197a8d",
+          "features": 25,
+          "bbox": [
+            -73.22554,
+            44.40883,
+            -71.01657,
+            45.03208
+          ],
+          "state": "VT"
+        },
+        {
+          "path": "gas_pipelines/WA.geojson",
+          "bytes": 25233,
+          "sha256": "aca31a9fad8c32b2a9697426e05db0b5dd2cf00e6d4dbc072b3266649c1128e3",
+          "features": 88,
+          "bbox": [
+            -123.47626,
+            45.42141,
+            -117.03856,
+            49.00192
+          ],
+          "state": "WA"
+        },
+        {
+          "path": "gas_pipelines/WI.geojson",
+          "bytes": 98653,
+          "sha256": "58b6f3ce0f69adb6c02df29bdec04c25bdc828ac8cf85a76f106cf39ff2ce624",
+          "features": 321,
+          "bbox": [
+            -92.97203,
+            41.31841,
+            -87.58226,
+            46.79962
+          ],
+          "state": "WI"
+        },
+        {
+          "path": "gas_pipelines/WV.geojson",
+          "bytes": 158911,
+          "sha256": "4d0a447ba5d6ec3710b299ddd54d0e718e1e2ad22b490c53f12bb5e8d494e27e",
+          "features": 626,
+          "bbox": [
+            -82.61057,
+            37.2782,
+            -78.66701,
+            40.62401
+          ],
+          "state": "WV"
+        },
+        {
+          "path": "gas_pipelines/WY.geojson",
+          "bytes": 137066,
+          "sha256": "897cf59b7bbb18d44e92f37255ad3f0160ac15518e207d1cc89154d954887a9a",
+          "features": 375,
+          "bbox": [
+            -114.03792,
+            37.43539,
+            -94.4787,
+            46.02352
+          ],
+          "state": "WY"
+        }
+      ],
+      "counts": {
+        "input_features": 32961,
+        "output_features": 33646,
+        "repaired_invalid_geometry": 1,
+        "dropped": {
+          "not_operating": 0,
+          "null_or_empty_geometry": 40,
+          "zero_length": 13,
+          "outside_us_land": 0,
+          "beyond_nearest_state_limit": 0,
+          "empty_after_simplify": 1
+        },
+        "info": {
+          "unique_segments": 32907,
+          "segments_in_multiple_states": 728,
+          "offshore_segments": 1093,
+          "offshore_nearest_state_km_max": 210.9,
+          "offshore_basis": "touches no US state polygon and no non-US land polygon (countries input)",
+          "by_pipe_type": {
+            "Gathering": {
+              "segments": 69,
+              "length_km": 4100.5
+            },
+            "Interstate": {
+              "segments": 17959,
+              "length_km": 245666.6
+            },
+            "Intrastate": {
+              "segments": 14879,
+              "length_km": 120866.3
+            }
+          },
+          "total_length_km": 370633.4,
+          "note": "Counts above are per unique segment. A segment crossing a state border is written, whole, into every state file it touches; dedupe by id when merging files. id is the segment's row number in the EIA source file: stable within one release, NOT across releases. offshore = the segment touches no Census (coast-clipped) state polygon and no non-US land, and is filed under the nearest state (within 250 km); a segment on non-US land only (Canada, Mexico) is dropped and counted as outside_us_land. length_km is geodesic (WGS84) on the unsimplified segment."
+        }
+      }
+    },
+    "gas_pipelines_planned": {
+      "title": "Natural gas pipelines (planned: proposed and under construction)",
+      "source": "Global Energy Monitor, Global Gas Infrastructure Tracker (US subset)",
+      "licence": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+      "attribution": "Global Energy Monitor, Global Gas Infrastructure Tracker, CC BY 4.0",
+      "modifications": "Modified by Enerdatics: US proposed and under-construction pipelines only; filed by state; simplified; fields reduced and renamed; lengths computed; no warranty",
+      "source_url": "https://globalenergymonitor.org/",
+      "caveat": "Not a federal source; routes approximate.",
+      "third_party": true,
+      "vintage": "GEM Global Gas Infrastructure Tracker; release date not recorded in the extract (unproven)",
+      "properties": [
+        "id",
+        "pipeline_name",
+        "status",
+        "owner",
+        "start_year",
+        "capacity_bcm_y",
+        "length_km",
+        "planned"
+      ],
+      "geometry": "LineString/MultiLineString",
+      "simplify_tolerance_deg": 0.0005,
+      "statuses": [
+        "proposed",
+        "construction"
+      ],
+      "notes": "Third-party data (Global Energy Monitor), not a federal source; routes approximate. Reuse requires the attribution above (CC BY 4.0). id = row number in the GEM extract (no GEM project id in it), not stable across releases.",
+      "id_basis": "source row number (1-based); stable within one extract, not across releases",
+      "coverage": [
+        "AK",
+        "AL",
+        "AZ",
+        "CO",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "LA",
+        "MN",
+        "MS",
+        "NC",
+        "ND",
+        "NM",
+        "NV",
+        "OH",
+        "PA",
+        "TN",
+        "TX",
+        "VA",
+        "WI",
+        "WY"
+      ],
+      "files": [
+        {
+          "path": "gas_pipelines_planned/AK.geojson",
+          "bytes": 28347,
+          "sha256": "a598ee1b0cecfa029730fde0863a1558615c7c3a1147f2546be8afaec8a73336",
+          "features": 3,
+          "bbox": [
+            -158.0934,
+            60.67487,
+            -146.07809,
+            70.32383
+          ],
+          "state": "AK"
+        },
+        {
+          "path": "gas_pipelines_planned/AL.geojson",
+          "bytes": 15457,
+          "sha256": "274296b560bf0ab6a2894d41162b2fdffb009dfbe457df9bfac05e228514225b",
+          "features": 4,
+          "bbox": [
+            -91.05414,
+            32.05386,
+            -82.10486,
+            33.37119
+          ],
+          "state": "AL"
+        },
+        {
+          "path": "gas_pipelines_planned/AZ.geojson",
+          "bytes": 2469,
+          "sha256": "fecea5a0d2d9d194a6d1052c80ec4c9bacf6236ff2c6f0797183d904ebd5e4f0",
+          "features": 1,
+          "bbox": [
+            -111.50003,
+            31.70657,
+            -103.30353,
+            32.93043
+          ],
+          "state": "AZ"
+        },
+        {
+          "path": "gas_pipelines_planned/CO.geojson",
+          "bytes": 4027,
+          "sha256": "1c5c6f4cc3f1e99c19c84e83ebce7933d8a56d2a8b548c157079e797d0cc55b6",
+          "features": 1,
+          "bbox": [
+            -104.70202,
+            38.63082,
+            -104.23271,
+            40.28506
+          ],
+          "state": "CO"
+        },
+        {
+          "path": "gas_pipelines_planned/FL.geojson",
+          "bytes": 374,
+          "sha256": "77f8e9d4d18eb39c026d70ed89617528a678ae820c47aa4788f53b3082ec0d52",
+          "features": 1,
+          "bbox": [
+            -82.41656,
+            27.74574,
+            -82.40383,
+            27.79436
+          ],
+          "state": "FL"
+        },
+        {
+          "path": "gas_pipelines_planned/GA.geojson",
+          "bytes": 5775,
+          "sha256": "0cb3920d43808905342c235252fb2fb696e83d03677c9dcc70bf36d66ec05d66",
+          "features": 1,
+          "bbox": [
+            -88.91038,
+            32.12699,
+            -82.10486,
+            33.37119
+          ],
+          "state": "GA"
+        },
+        {
+          "path": "gas_pipelines_planned/ID.geojson",
+          "bytes": 2823,
+          "sha256": "0bcdfebdf0a77ce8a860098acc10f20c7c069fcb9f7d25384c7aa66144d0629b",
+          "features": 1,
+          "bbox": [
+            -111.27244,
+            42.25733,
+            -110.93521,
+            42.73408
+          ],
+          "state": "ID"
+        },
+        {
+          "path": "gas_pipelines_planned/IL.geojson",
+          "bytes": 2346,
+          "sha256": "14c8094ddb81aa4783926002787252ee15d45b599bb5ee295b7cf0edbe5f854e",
+          "features": 1,
+          "bbox": [
+            -88.58173,
+            41.5388,
+            -88.01527,
+            43.6739
+          ],
+          "state": "IL"
+        },
+        {
+          "path": "gas_pipelines_planned/LA.geojson",
+          "bytes": 32495,
+          "sha256": "eb797046cc6ffe9667186545c9308b8a1af1a60a1ec5961c87835e637e3898b0",
+          "features": 13,
+          "bbox": [
+            -104.02941,
+            29.39696,
+            -89.87922,
+            32.22265
+          ],
+          "state": "LA"
+        },
+        {
+          "path": "gas_pipelines_planned/MN.geojson",
+          "bytes": 722,
+          "sha256": "a86ad8bf44eef99f274f356d2a40b5d32940b4e785297fa50e7567b0def0967d",
+          "features": 1,
+          "bbox": [
+            -93.47234,
+            43.55036,
+            -90.78121,
+            45.21199
+          ],
+          "state": "MN"
+        },
+        {
+          "path": "gas_pipelines_planned/MS.geojson",
+          "bytes": 16148,
+          "sha256": "c7aa16052aa32b02742a10999aa1158a53aae074b32cd8e31780333ddf67b9a9",
+          "features": 4,
+          "bbox": [
+            -91.05414,
+            31.90824,
+            -82.10486,
+            33.37119
+          ],
+          "state": "MS"
+        },
+        {
+          "path": "gas_pipelines_planned/NC.geojson",
+          "bytes": 2586,
+          "sha256": "d4b1017fc165c8ffa8886914453084505efd0655a8e0be0f7fbbb98fe475bdcb",
+          "features": 3,
+          "bbox": [
+            -82.65889,
+            35.47162,
+            -79.33646,
+            36.83896
+          ],
+          "state": "NC"
+        },
+        {
+          "path": "gas_pipelines_planned/ND.geojson",
+          "bytes": 6335,
+          "sha256": "64c709d27854395a3d3e3f05d92474d2aba1ef7a681e83fb7d990f2e20b999a2",
+          "features": 2,
+          "bbox": [
+            -103.27441,
+            46.83588,
+            -97.23282,
+            47.86122
+          ],
+          "state": "ND"
+        },
+        {
+          "path": "gas_pipelines_planned/NM.geojson",
+          "bytes": 4559,
+          "sha256": "f4eb6a67f2f18ecb1e13009c4a906d9095cc6796077cd7e154985c6cef83e7ee",
+          "features": 3,
+          "bbox": [
+            -111.50003,
+            31.70657,
+            -103.26633,
+            32.93043
+          ],
+          "state": "NM"
+        },
+        {
+          "path": "gas_pipelines_planned/NV.geojson",
+          "bytes": 790,
+          "sha256": "8ffba30c52a071279eb87fd064f72b4b9040410a1ac5c17d289de9cc17fc4a1e",
+          "features": 1,
+          "bbox": [
+            -115.74401,
+            40.72222,
+            -115.59547,
+            40.83359
+          ],
+          "state": "NV"
+        },
+        {
+          "path": "gas_pipelines_planned/OH.geojson",
+          "bytes": 385,
+          "sha256": "3b28747d989690a581c5d41467e8eba60880b3a6c5e1b878a805209c916af52f",
+          "features": 1,
+          "bbox": [
+            -84.22612,
+            39.48693,
+            -80.87139,
+            39.76334
+          ],
+          "state": "OH"
+        },
+        {
+          "path": "gas_pipelines_planned/PA.geojson",
+          "bytes": 2358,
+          "sha256": "0cb3158e0e744be532da0ab120fb89bac611a37cd808b6809b225ead72622e98",
+          "features": 2,
+          "bbox": [
+            -77.72651,
+            40.91138,
+            -75.34183,
+            41.98112
+          ],
+          "state": "PA"
+        },
+        {
+          "path": "gas_pipelines_planned/TN.geojson",
+          "bytes": 5445,
+          "sha256": "c91f9c9e99fcbd4fb90a90dc561f44ff1a861dbc14d12979f5d411d9aad12d5a",
+          "features": 1,
+          "bbox": [
+            -86.2586,
+            35.8975,
+            -84.46483,
+            36.39324
+          ],
+          "state": "TN"
+        },
+        {
+          "path": "gas_pipelines_planned/TX.geojson",
+          "bytes": 73904,
+          "sha256": "3acadc356a983d4b14b9f4798318b8c10c8cd059cdeb2fbbb9c05a60311c1de5",
+          "features": 25,
+          "bbox": [
+            -111.50003,
+            25.98772,
+            -92.25211,
+            35.41959
+          ],
+          "state": "TX"
+        },
+        {
+          "path": "gas_pipelines_planned/VA.geojson",
+          "bytes": 2206,
+          "sha256": "14359d4edd312de4608f8e19ee74a87a6abfd3bbc359c3b9d858d21ff43632fb",
+          "features": 2,
+          "bbox": [
+            -80.26098,
+            35.93077,
+            -79.33646,
+            36.83896
+          ],
+          "state": "VA"
+        },
+        {
+          "path": "gas_pipelines_planned/WI.geojson",
+          "bytes": 3027,
+          "sha256": "9428e4728a3a0b784b8d287a59fe1f660b1b209af61c680b099429e09a3fc277",
+          "features": 2,
+          "bbox": [
+            -93.47234,
+            41.5388,
+            -88.01527,
+            45.21199
+          ],
+          "state": "WI"
+        },
+        {
+          "path": "gas_pipelines_planned/WY.geojson",
+          "bytes": 2823,
+          "sha256": "0bcdfebdf0a77ce8a860098acc10f20c7c069fcb9f7d25384c7aa66144d0629b",
+          "features": 1,
+          "bbox": [
+            -111.27244,
+            42.25733,
+            -110.93521,
+            42.73408
+          ],
+          "state": "WY"
+        }
+      ],
+      "counts": {
+        "input_features": 57,
+        "output_features": 74,
+        "repaired_invalid_geometry": 1,
+        "dropped": {
+          "status_not_proposed_or_construction": 0,
+          "null_or_empty_geometry": 0,
+          "zero_length": 0,
+          "outside_us_land": 0,
+          "beyond_nearest_state_limit": 0,
+          "empty_after_simplify": 0
+        },
+        "info": {
+          "unique_features": 57,
+          "status_counts": {
+            "proposed": 40,
+            "construction": 17
+          },
+          "dropped_status_values": {},
+          "features_in_multiple_states": 15,
+          "offshore_features": 1,
+          "offshore_nearest_state_km_max": 40.7,
+          "offshore_basis": "touches no US state polygon and no non-US land polygon (countries input)",
+          "without_capacity": 9,
+          "without_start_year": 5,
+          "total_length_km": 13996.3,
+          "note": "Counts above are per feature. A feature crossing a state border is written, whole, into every state file it touches; dedupe by id when merging files. id is the feature's row number in the GEM extract (it carries no GEM project id): stable within one extract, NOT across releases. A feature on non-US land only is dropped (outside_us_land). One project can be several features (segments) with the same pipeline_name. capacity_bcm_y = GEM capacity in billion cubic metres per year (blank where GEM has none). length_km is geodesic (WGS84) on the unsimplified route; routes are approximate."
+        }
+      }
+    },
     "plants": {
-      "included": false,
-      "reason": "No power-plant input was supplied for this build.",
-      "files": []
+      "title": "Existing conventional power plants (EIA-860M)",
+      "source": "U.S. Energy Information Administration, Form EIA-860M Preliminary Monthly Electric Generator Inventory (September 2026), Operating and Planned tabs incl. Puerto Rico",
+      "licence": "Public domain. Source: U.S. Energy Information Administration, Form EIA-860M (September 2026)",
+      "modifications": "Modified by Enerdatics: generator rows aggregated to one point per plant and status (operating / planned); conventional plants only (plants mainly solar, wind or battery storage left out); retired and canceled generators excluded; fields reduced; coordinates rounded; no warranty",
+      "source_url": "https://www.eia.gov/electricity/data/eia860m/",
+      "vintage": "EIA-860M, September 2026 (generator inventory as of that month)",
+      "properties": [
+        "plant_id",
+        "plant_name",
+        "entity",
+        "state",
+        "county",
+        "ba_code",
+        "sector",
+        "technology",
+        "energy_source",
+        "fuel_category",
+        "nameplate_mw",
+        "generators",
+        "has_renewable_units",
+        "status",
+        "planned_operation",
+        "state_mismatch"
+      ],
+      "geometry": "Point",
+      "statuses": [
+        "operating",
+        "planned"
+      ],
+      "fuel_categories": [
+        "gas",
+        "coal",
+        "nuclear",
+        "hydro",
+        "oil",
+        "geothermal",
+        "biomass",
+        "other"
+      ],
+      "excluded_fuel_categories": [
+        "solar",
+        "wind",
+        "battery"
+      ],
+      "coverage": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "PR",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+      ],
+      "coverage_basis": "national dataset: a state without a file has no plants in it",
+      "files": [
+        {
+          "path": "plants/AK.geojson",
+          "bytes": 68007,
+          "sha256": "953d91ce177d11ab8993a8942ff5c6d5bd0d10554b75450a4fd3eb4defcf4831",
+          "features": 143,
+          "bbox": [
+            -171.7124,
+            53.85851,
+            -131.3561,
+            71.292
+          ],
+          "state": "AK"
+        },
+        {
+          "path": "plants/AL.geojson",
+          "bytes": 31962,
+          "sha256": "d02744d7f77ef3d25c08b9cc91d62ada3d41ed5b47e7fb604b833be46a1c8430",
+          "features": 67,
+          "bbox": [
+            -88.18241,
+            30.43203,
+            -85.0272,
+            34.8069
+          ],
+          "state": "AL"
+        },
+        {
+          "path": "plants/AR.geojson",
+          "bytes": 26015,
+          "sha256": "be77fdcf3a1fe152a26ce07722626ce5e5eb8490be601ed04f79de54ba6911c5",
+          "features": 54,
+          "bbox": [
+            -94.5241,
+            33.1421,
+            -89.9489,
+            36.42151
+          ],
+          "state": "AR"
+        },
+        {
+          "path": "plants/AZ.geojson",
+          "bytes": 26354,
+          "sha256": "2d54e360ed1bed43231ae6ae852d443c4356581f58d56705b9a724911fafe478",
+          "features": 55,
+          "bbox": [
+            -114.738,
+            31.36347,
+            -109.1639,
+            36.93661
+          ],
+          "state": "AZ"
+        },
+        {
+          "path": "plants/CA.geojson",
+          "bytes": 345044,
+          "sha256": "7e0224a2668a14e4d5c6f01ef3d7cfc19d804551c1db3747c64eccbf8a3da396",
+          "features": 720,
+          "bbox": [
+            -124.2103,
+            32.56245,
+            -114.1402,
+            41.98561
+          ],
+          "state": "CA"
+        },
+        {
+          "path": "plants/CO.geojson",
+          "bytes": 47592,
+          "sha256": "1d3cceafe152eca43443be2775ee9da718555e52e8dffef77016abebd8700685",
+          "features": 99,
+          "bbox": [
+            -108.7347,
+            37.14556,
+            -102.0737,
+            40.9505
+          ],
+          "state": "CO"
+        },
+        {
+          "path": "plants/CT.geojson",
+          "bytes": 43886,
+          "sha256": "8e6cafacd583285fd38b4957212a714dbe13e36623087a064dd049cb51bf702a",
+          "features": 92,
+          "bbox": [
+            -121.9258,
+            37.42993,
+            -71.88675,
+            41.98861
+          ],
+          "state": "CT"
+        },
+        {
+          "path": "plants/DC.geojson",
+          "bytes": 2557,
+          "sha256": "5ddc7981d2b34c58bd47eb06577ad1ad0b90f0cd1cfc0d2f935f14df989d6566",
+          "features": 5,
+          "bbox": [
+            -77.0508,
+            38.82056,
+            -77.00744,
+            38.92033
+          ],
+          "state": "DC"
+        },
+        {
+          "path": "plants/DE.geojson",
+          "bytes": 8148,
+          "sha256": "8526cbbefff2c40c8f2cdc5cc8dc891f0c9ad5886b5fded6e62a5f7e277841b0",
+          "features": 17,
+          "bbox": [
+            -75.7233,
+            38.5857,
+            -75.2341,
+            39.75787
+          ],
+          "state": "DE"
+        },
+        {
+          "path": "plants/FL.geojson",
+          "bytes": 55137,
+          "sha256": "fe633ccc0503e8a049d2bca97f27abd734973826876f923db72d03c2362056d4",
+          "features": 115,
+          "bbox": [
+            -87.39,
+            24.56333,
+            -80.05249,
+            30.92833
+          ],
+          "state": "FL"
+        },
+        {
+          "path": "plants/GA.geojson",
+          "bytes": 54334,
+          "sha256": "06f3ced1c9c57362278737a7cd98ccf3d98207202050b3aa372c39d29d55e38a",
+          "features": 114,
+          "bbox": [
+            -85.3275,
+            30.69444,
+            -81.12425,
+            34.95915
+          ],
+          "state": "GA"
+        },
+        {
+          "path": "plants/HI.geojson",
+          "bytes": 16292,
+          "sha256": "7e4bf0e28181be942d6cee1b40d5d745b1bf7130e6037f3ff6fd9d8f7e8be2ea",
+          "features": 35,
+          "bbox": [
+            -159.6294,
+            19.47898,
+            -154.88839,
+            22.19629
+          ],
+          "state": "HI"
+        },
+        {
+          "path": "plants/IA.geojson",
+          "bytes": 68807,
+          "sha256": "fdeb9eb5c77178ba76d3e7844c5bb7f8e46f084e8e7a41b3db0379fce04b30f0",
+          "features": 146,
+          "bbox": [
+            -96.37971,
+            40.38917,
+            -90.2097,
+            43.4301
+          ],
+          "state": "IA"
+        },
+        {
+          "path": "plants/ID.geojson",
+          "bytes": 46716,
+          "sha256": "f6083c7d60adc820fee44387e007131465ccaccfdbabafd32e93414ab5ecd6f2",
+          "features": 99,
+          "bbox": [
+            -116.9986,
+            42.09942,
+            -111.2058,
+            48.95955
+          ],
+          "state": "ID"
+        },
+        {
+          "path": "plants/IL.geojson",
+          "bytes": 68169,
+          "sha256": "6cd46819de431bbda21b914873dea267722a00b839ba2835287c98e4a1ea49b4",
+          "features": 143,
+          "bbox": [
+            -90.61412,
+            37.61975,
+            -87.5563,
+            42.4776
+          ],
+          "state": "IL"
+        },
+        {
+          "path": "plants/IN.geojson",
+          "bytes": 37675,
+          "sha256": "a6482483879f5dd397982bfc08c2c9c094cd850cb311da043fd68bb566c9a250",
+          "features": 79,
+          "bbox": [
+            -87.92611,
+            37.90529,
+            -84.8669,
+            41.7208
+          ],
+          "state": "IN"
+        },
+        {
+          "path": "plants/KS.geojson",
+          "bytes": 51155,
+          "sha256": "bab0b719a7a9827dc1f0d7b5391e8a37f63263515b4a424aa5d011b124b60184",
+          "features": 108,
+          "bbox": [
+            -101.8101,
+            37.03734,
+            -94.6381,
+            39.90492
+          ],
+          "state": "KS"
+        },
+        {
+          "path": "plants/KY.geojson",
+          "bytes": 23865,
+          "sha256": "d174d4a8ba1de26adf102cf26c74826e612f44fb13e317a1bb1f10f406ffe715",
+          "features": 50,
+          "bbox": [
+            -88.775,
+            36.8691,
+            -82.60459,
+            38.9036
+          ],
+          "state": "KY"
+        },
+        {
+          "path": "plants/LA.geojson",
+          "bytes": 42318,
+          "sha256": "24e7cb3c2223f06115eef4b9714ca321eb1362da754ed66a218a7f70fae17777",
+          "features": 88,
+          "bbox": [
+            -93.9597,
+            29.25206,
+            -89.8575,
+            32.7061
+          ],
+          "state": "LA"
+        },
+        {
+          "path": "plants/MA.geojson",
+          "bytes": 48162,
+          "sha256": "08878fb9733dd9e4baa361ac4c9c95b0b8af17bcc1f0cd4e506b710a7a3b32f3",
+          "features": 100,
+          "bbox": [
+            -73.34945,
+            41.2583,
+            -70.0517,
+            42.765
+          ],
+          "state": "MA"
+        },
+        {
+          "path": "plants/MD.geojson",
+          "bytes": 20648,
+          "sha256": "efc11289fb220b52de2441e5b80a10c0efbc9ba137d752798abc303b7ad8836e",
+          "features": 43,
+          "bbox": [
+            -79.413,
+            37.99413,
+            -75.21722,
+            39.71936
+          ],
+          "state": "MD"
+        },
+        {
+          "path": "plants/ME.geojson",
+          "bytes": 34631,
+          "sha256": "3d7fe6bd448eace8dda78c5eb70bd959c9d750dab9aa6f422f9cc09ae9cf859f",
+          "features": 72,
+          "bbox": [
+            -70.9975,
+            43.22698,
+            -67.4012,
+            47.35814
+          ],
+          "state": "ME"
+        },
+        {
+          "path": "plants/MI.geojson",
+          "bytes": 85551,
+          "sha256": "c6f4d7bda9eb194e643a69597a8a321d4b568185bdd7c97d41c25d21e6e5167e",
+          "features": 180,
+          "bbox": [
+            -90.41615,
+            41.7992,
+            -82.4379,
+            46.79267
+          ],
+          "state": "MI"
+        },
+        {
+          "path": "plants/MN.geojson",
+          "bytes": 67200,
+          "sha256": "55ea1261ed249666aa03124d08eecd43470a66c964b117d844493554bb631bef",
+          "features": 142,
+          "bbox": [
+            -97.00715,
+            43.63349,
+            -90.1041,
+            48.91635
+          ],
+          "state": "MN"
+        },
+        {
+          "path": "plants/MO.geojson",
+          "bytes": 45671,
+          "sha256": "9313b179bb0866eca359c61b6a4da4e42f346d0ade4d78783b24003a0c36f174",
+          "features": 96,
+          "bbox": [
+            -97.92166,
+            36.2338,
+            -89.5617,
+            40.47674
+          ],
+          "state": "MO"
+        },
+        {
+          "path": "plants/MS.geojson",
+          "bytes": 22227,
+          "sha256": "5d6c2d70d15423808debe0a7bc48386be26999078f98503f966dbe4222bad895",
+          "features": 46,
+          "bbox": [
+            -91.13058,
+            30.34,
+            -88.2717,
+            34.9939
+          ],
+          "state": "MS"
+        },
+        {
+          "path": "plants/MT.geojson",
+          "bytes": 20093,
+          "sha256": "8a98cfb4d84f6a795cd13c2730ceaa73a37363b719e17ee30bea5c0cb50c3d38",
+          "features": 42,
+          "bbox": [
+            -115.7336,
+            45.20634,
+            -104.1567,
+            48.4098
+          ],
+          "state": "MT"
+        },
+        {
+          "path": "plants/NC.geojson",
+          "bytes": 65372,
+          "sha256": "9fe430712b0be192bec7d46c98c58c16fa4c365e0a1df8640d7a6b38b180f4ba",
+          "features": 137,
+          "bbox": [
+            -84.17753,
+            33.9397,
+            -75.53471,
+            36.5278
+          ],
+          "state": "NC"
+        },
+        {
+          "path": "plants/ND.geojson",
+          "bytes": 9949,
+          "sha256": "4b72095e6773edeaf4c0905adf7693899e662e47e3d16ed8a87c41bcfd1196a0",
+          "features": 21,
+          "bbox": [
+            -103.9528,
+            45.93861,
+            -96.83583,
+            48.59316
+          ],
+          "state": "ND"
+        },
+        {
+          "path": "plants/NE.geojson",
+          "bytes": 39117,
+          "sha256": "7016e32da24f1ea5ee9870ae663a62f6503f3f7747ebe2cd395b78c0e22a1554",
+          "features": 83,
+          "bbox": [
+            -103.6667,
+            40.055,
+            -95.6083,
+            42.84883
+          ],
+          "state": "NE"
+        },
+        {
+          "path": "plants/NH.geojson",
+          "bytes": 25694,
+          "sha256": "3087f4367221f1b268e2d7faad3f111985e39c3700de122646cf6a1806b7e141",
+          "features": 54,
+          "bbox": [
+            -72.3476,
+            42.73227,
+            -70.7842,
+            44.78665
+          ],
+          "state": "NH"
+        },
+        {
+          "path": "plants/NJ.geojson",
+          "bytes": 33431,
+          "sha256": "43e3c0c1068c74c9bd60f7cc373ec3374a0270efd35db4b9a4a4666ab3336e6c",
+          "features": 69,
+          "bbox": [
+            -75.5377,
+            39.23111,
+            -74.01511,
+            41.0006
+          ],
+          "state": "NJ"
+        },
+        {
+          "path": "plants/NM.geojson",
+          "bytes": 13495,
+          "sha256": "4884603ca938e7859877825f10c421d0207d0022e417cc66345428bfecdbe0d2",
+          "features": 28,
+          "bbox": [
+            -108.8383,
+            31.8047,
+            -103.3015,
+            36.8061
+          ],
+          "state": "NM"
+        },
+        {
+          "path": "plants/NV.geojson",
+          "bytes": 26286,
+          "sha256": "bfd0c0304eb70462d8062ab29d401a5bc65fb9ddda2f7067ffc25138c4bc941c",
+          "features": 56,
+          "bbox": [
+            -119.7669,
+            35.6139,
+            -114.738,
+            41.4828
+          ],
+          "state": "NV"
+        },
+        {
+          "path": "plants/NY.geojson",
+          "bytes": 178688,
+          "sha256": "b494178785a4e109f68efacf510f38300f2552a1e6cd5616cff54f8480aaff4d",
+          "features": 374,
+          "bbox": [
+            -79.3186,
+            40.53656,
+            -72.01,
+            45.0038
+          ],
+          "state": "NY"
+        },
+        {
+          "path": "plants/OH.geojson",
+          "bytes": 55925,
+          "sha256": "c28708bd85593d0bd5c746306b3ae4fa1df936e67b39cab37add275bc4fd0a68",
+          "features": 118,
+          "bbox": [
+            -84.8036,
+            38.57309,
+            -80.58611,
+            41.89004
+          ],
+          "state": "OH"
+        },
+        {
+          "path": "plants/OK.geojson",
+          "bytes": 27769,
+          "sha256": "e092082e5837b8f357a46066450828641cdddf1ee4f41b10d6012983b72788d6",
+          "features": 58,
+          "bbox": [
+            -99.8906,
+            33.9961,
+            -94.6458,
+            36.81389
+          ],
+          "state": "OK"
+        },
+        {
+          "path": "plants/OR.geojson",
+          "bytes": 46498,
+          "sha256": "880868d87752a38eadc5359bc6e3fa3f03959c0b68637c2e86c69b7f6d7084c8",
+          "features": 98,
+          "bbox": [
+            -123.9319,
+            42.12117,
+            -116.7008,
+            46.17894
+          ],
+          "state": "OR"
+        },
+        {
+          "path": "plants/PA.geojson",
+          "bytes": 86749,
+          "sha256": "bba4d3c96afeecd14db3d3266d2ccf04437d2569751d1d6ec3db69ceca3b9cdb",
+          "features": 182,
+          "bbox": [
+            -80.4336,
+            39.72028,
+            -74.7411,
+            42.06017
+          ],
+          "state": "PA"
+        },
+        {
+          "path": "plants/PR.geojson",
+          "bytes": 23263,
+          "sha256": "9b0ecfae0ac550f2fd713ca89854b9329af321230e2499b9960b6aac599deda9",
+          "features": 49,
+          "bbox": [
+            -67.1592,
+            17.94712,
+            -65.27956,
+            18.4859
+          ],
+          "state": "PR"
+        },
+        {
+          "path": "plants/RI.geojson",
+          "bytes": 7219,
+          "sha256": "35bf947ed80f30ef533ea677cb14eddf2887badef686358de93be3ba6ea9f85a",
+          "features": 15,
+          "bbox": [
+            -71.67011,
+            41.17555,
+            -71.17059,
+            42.01447
+          ],
+          "state": "RI"
+        },
+        {
+          "path": "plants/SC.geojson",
+          "bytes": 42981,
+          "sha256": "7db1788cff3aebed5c252c006906d46706d68b698d19d74a7510516ea888924d",
+          "features": 90,
+          "bbox": [
+            -83.03832,
+            32.20886,
+            -78.92415,
+            35.1597
+          ],
+          "state": "SC"
+        },
+        {
+          "path": "plants/SD.geojson",
+          "bytes": 13405,
+          "sha256": "be0dac806a2298654bb9f146c85e7ea3a9b206b3691dd11cd39ebaf6003a68ab",
+          "features": 28,
+          "bbox": [
+            -103.8547,
+            42.89333,
+            -96.47698,
+            45.42988
+          ],
+          "state": "SD"
+        },
+        {
+          "path": "plants/TN.geojson",
+          "bytes": 26635,
+          "sha256": "fe83b95a17864edf7292e53c2cecc867c7c0f3f9deb0250b591f43ee249871a8",
+          "features": 56,
+          "bbox": [
+            -90.14868,
+            35.0017,
+            -82.09021,
+            36.57481
+          ],
+          "state": "TN"
+        },
+        {
+          "path": "plants/TX.geojson",
+          "bytes": 200884,
+          "sha256": "04c520b9c0fbf6fd5325c45deb04912b0a427fed4af5d3277619e9c86382335f",
+          "features": 420,
+          "bbox": [
+            -106.5014,
+            25.9131,
+            -93.56588,
+            35.6957
+          ],
+          "state": "TX"
+        },
+        {
+          "path": "plants/UT.geojson",
+          "bytes": 33782,
+          "sha256": "1564850c3585ecdb5bba7c6f2c02d429cdd4ea56077ff721620e25a9ed5e174d",
+          "features": 71,
+          "bbox": [
+            -113.765,
+            37.03005,
+            -109.2844,
+            41.8347
+          ],
+          "state": "UT"
+        },
+        {
+          "path": "plants/VA.geojson",
+          "bytes": 54370,
+          "sha256": "0398c2972b1c1ccc46fdbe896d2f6a686211022d2f9cbc5873bec4ef53bf3797",
+          "features": 114,
+          "bbox": [
+            -82.33806,
+            36.57678,
+            -75.54,
+            39.14083
+          ],
+          "state": "VA"
+        },
+        {
+          "path": "plants/VT.geojson",
+          "bytes": 26088,
+          "sha256": "71aacdb479145459db5e395fe75867ae5b92133c3c748f68390de482e197d3f8",
+          "features": 55,
+          "bbox": [
+            -73.2575,
+            42.77165,
+            -71.53015,
+            44.99927
+          ],
+          "state": "VT"
+        },
+        {
+          "path": "plants/WA.geojson",
+          "bytes": 51391,
+          "sha256": "9bd8928317a0e7a40896d803f4fe490af89a27859dc57a71896d720e27ab848e",
+          "features": 108,
+          "bbox": [
+            -123.7739,
+            45.6497,
+            -117.1472,
+            48.9905
+          ],
+          "state": "WA"
+        },
+        {
+          "path": "plants/WI.geojson",
+          "bytes": 71532,
+          "sha256": "d5ef5efa1d658b8fbd2994272a68f0e1290c91bda3ce1e2a765fcae7989536d1",
+          "features": 150,
+          "bbox": [
+            -92.71621,
+            42.5486,
+            -86.93082,
+            46.58722
+          ],
+          "state": "WI"
+        },
+        {
+          "path": "plants/WV.geojson",
+          "bytes": 15848,
+          "sha256": "a26cfad577263645491d00f19725b9c0dc6fe5c635f0c6dcbd8c17ec11241d68",
+          "features": 33,
+          "bbox": [
+            -82.5938,
+            37.81577,
+            -77.78444,
+            40.52821
+          ],
+          "state": "WV"
+        },
+        {
+          "path": "plants/WY.geojson",
+          "bytes": 20375,
+          "sha256": "5c90370db9827f9d6e30e831adec4cb17fe7584b5e40b5aa44b89e472cec6e89",
+          "features": 43,
+          "bbox": [
+            -110.9166,
+            41.12361,
+            -104.72,
+            44.9806
+          ],
+          "state": "WY"
+        }
+      ],
+      "counts": {
+        "input_rows": 31073,
+        "output_features": 5460,
+        "dropped_rows_total": 0,
+        "dropped": {
+          "missing_or_non_numeric_coords": 0,
+          "coords_out_of_range": 0,
+          "coords_zero_zero": 0,
+          "outside_us_envelope": 0,
+          "unknown_state": 0
+        },
+        "info": {
+          "eia860m_month": "September 2026",
+          "generator_rows_by_tab": {
+            "Operating": 28484,
+            "Operating_PR": 228,
+            "Planned": 2358,
+            "Planned_PR": 3
+          },
+          "tabs_excluded": [
+            "Retired",
+            "Retired_PR",
+            "Canceled or Postponed"
+          ],
+          "non_generator_rows_skipped": 8,
+          "plants_by_status": {
+            "operating": 5289,
+            "planned": 171
+          },
+          "plants_dropped_for_coordinates_or_state": 0,
+          "excluded_solar_wind_battery_plants": {
+            "operating": {
+              "solar": 7574,
+              "wind": 1376,
+              "battery": 625
+            },
+            "planned": {
+              "solar": 1077,
+              "wind": 69,
+              "battery": 293
+            },
+            "total": 11014,
+            "rule": "solar, wind and battery plants excluded: a plant is left out when its largest fuel category by summed nameplate MW is solar, wind or battery storage, even if it also has a conventional unit"
+          },
+          "planned_points_whose_operating_plant_was_excluded": 3,
+          "plants_with_renewable_units": 93,
+          "fuel_category_counts": {
+            "gas": 2120,
+            "coal": 193,
+            "nuclear": 58,
+            "hydro": 1471,
+            "oil": 900,
+            "geothermal": 70,
+            "biomass": 593,
+            "other": 55
+          },
+          "generator_status_codes": {
+            "operating": {
+              "OA": 219,
+              "OP": 26378,
+              "OS": 538,
+              "SB": 1577
+            },
+            "planned": {
+              "L": 406,
+              "P": 695,
+              "T": 228,
+              "TS": 158,
+              "U": 465,
+              "V": 409
+            }
+          },
+          "generators_without_nameplate_mw": 0,
+          "planned_without_operation_date": 0,
+          "state_mismatch": 26,
+          "outside_state_polygons": 15,
+          "plants_with_differing_generator_coords": 0,
+          "plants_with_conflicting_state": 0,
+          "primary_category_ties_broken": 203,
+          "note": "Conventional plants only. One point per plant and status group, aggregated from generator rows: a plant with operating units and a planned expansion appears twice (status operating / planned). fuel_category is the plant's largest category by summed nameplate MW (ties: more generators, then the order of fuel_categories); technology and energy_source are the largest within it. nameplate_mw and generators count only the conventional units; has_renewable_units = the plant also has solar, wind or battery units, not counted. planned_operation = the earliest planned operation year-month among the plant's planned generators. Rows without usable coordinates or state are dropped and counted per reason."
+        }
+      }
     },
     "boundaries_states": {
       "title": "State boundaries",
